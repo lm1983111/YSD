@@ -64,8 +64,15 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .mt60{
     margin-top: 60px;
 }
+.mt-reduce10{
+    margin-top: -10px;
+}
 .mr10{
     margin-right: 10px;
+}
+.mtb30{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .w420h160-textarea{
     width: 420px !important;
@@ -73,6 +80,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .h10{
     height: 10px;
+}
+.plr25{
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .plr15{
     padding-left: 15px;
@@ -95,10 +106,20 @@ a{
     cursor: pointer;
 }
 .fs18{
+     font-size: 18px;
+}
+.fs18-c40{
     font-size: 18px;
+    color: #404040;
 }
 .red{
     color: red;
+}
+p{
+    color: #666666;
+}
+.relative{
+    position: relative;
 }
 .textarea-common{
     height: 100px !important;
@@ -170,45 +191,48 @@ a{
     height: 32px;
     line-height: 32px;
 }
-.nav-tabs{
-    border: none;
+
+/*封闭的nav*/
+.has-seal-nav .nav > li > a{
+    padding: 15px 30px;
 }
-.nav-tabs > li{
-    margin-right: 5px;
-    margin-left: 0;
+.has-seal-nav .nav-tabs{
+    position: relative;
+    border-right: 1px solid #ddd;
 }
-.nav-tabs > li > a{
+.has-seal-nav .nav-tabs:before{
+    content: '';
     display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #ddd;
+}
+.has-seal-nav .nav-tabs > li > a{
+    color: #666666;
     border-radius: 0;
-    margin-right: 0;
-    font-size: 14px;
-    outline: none;
+    margin-right: -1px;
+    border: 1px solid #ddd;
 }
-.nav-tabs > li > a:hover{
-    color: #333;
-    outline: none;
+.has-seal-nav .nav-tabs > li.active > a, .has-seal-nav .nav-tabs > li.active:hover > a{
+    border-bottom: 1px solid #ffffff;
 }
-.nav-tabs > li > a, .nav-tabs > li > a:focus {
-    color: #666;
-    border: 0px;
-    padding: 10px 16px;
-    background: #FBFAF8;
-    outline: none;
+.has-seal-nav .nav-tabs > li > a:hover{
+    border: 1px solid #ddd;
 }
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
-    color: #333;
-    border: none;
-    background-color: #b3b3b3;
-    outline: none;
+.has-seal-nav .tab-content{
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:1px solid #ddd;
+    background-color: #ffffff;
 }
-.nav-tabs > li, .nav-tabs > li.active{
-    border: 1px solid #b3b3b3;
-    background-color: #b3b3b3;
-    outline: none;
-}
+/*封闭的nav结束*/
+
 .form-control {
     height: 38px;
-    border-radius: 0px;
+    border-radius: 0;
     padding: 6px;
     -webkit-transition: none;
     transition: none;
@@ -221,6 +245,17 @@ a{
 .w600{width: 600px}
 .w700{width: 700px}
 
+.grid-plr15{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid-plr30{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 /* 相册  */
 .thumb50-table{
@@ -359,7 +394,6 @@ a{
     display: block;
     float: left;
     height: 100%;
-    border-right: 1px solid #ddd;
 }
 .topbar-right-item:last-child{
     border-right: 0;
@@ -388,14 +422,8 @@ a{
     margin-right: 10px;
     border-radius: 3px;
 }
-.icon-exit{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
+.topbar-btn .icon-icon_exit{
     vertical-align: middle;
-    background-image: url("../img/exit.png");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 /*顶部菜单结束*/
 
@@ -422,9 +450,24 @@ a{
     background: -webkit-linear-gradient(#4883c6,#23bec2);
     background: linear-gradient(#4883c6,#23bec2);
 }
+
+.sidebar-bg{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 170px;
+    height: 280px;
+    background-image: url("../img/sidebar_bg.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
 .view-sidebar a{
     text-decoration: none;
 }
+
 .view-sidebar .sidebar-item-title{
     position: relative;
     display: block;
@@ -433,50 +476,32 @@ a{
     line-height: 46px;
     padding-left: 30px;
     font-size: 14px;
-    color: #c5dfee;
-    background-color: transparent;
+    color: #fff;
+    opacity: .7;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
+
+.sidebar-item-title [class^="icon-"]{
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+}
+
 .view-sidebar .sidebar-item-title:hover{
+    opacity: 1;
     background-color:rgba(59,116,168,.3);
 }
-.sidebar-item-title.active{
-    color: #fff;
+.sidebar-item-title.active, .view-sidebar .sidebar-item-title.active:hover{
+    opacity: 1;
     background-color: #3c72a8;
 }
-.sidebar-item-title .icon-home, .sidebar-item-title .icon-telephone, .sidebar-item-title .icon-medical-record, .sidebar-item-title .icon-study-info, .sidebar-item-title .icon-suggestion{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 10px;
-    overflow: hidden;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    opacity: .7;
-}
-.sidebar-item-title.active .icon-home, .sidebar-item-title.active .icon-telephone, .sidebar-item-title.active .icon-medical-record, .sidebar-item-title.active .icon-suggestion, .sidebar-item-title.active .icon-study-info{
-    opacity: 1;
-}
-.sidebar-item-title .icon-home{
-    background-image: url("../img/home.png");
-}
-.sidebar-item-title .icon-telephone{
-    background-image: url("../img/telephone.png");
-}
-.sidebar-item-title .icon-medical-record{
-    background-image: url("../img/medical_record.png");
-}
-.sidebar-item-title .icon-suggestion{
-    background-image: url("../img/suggestion.png");
-}
-.sidebar-item-title .icon-study-info{
-    background-image: url("../img/study_info.png");
-}
+
 .sidebar-item-title.active:before{
     position: absolute;
     content: "";
@@ -489,32 +514,218 @@ a{
 }
 .sidebar-item-title.active:after{
     position: absolute;
-    content: "";
     top: 50%;
-    margin-top: -8px;
-    right: 0;
+    margin-top: -9px;
+    right: -6px;
     display: block;
-    height: 17px;
-    width: 7px;
-    background-image: url("../img/triangle_left.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    content: "\e90e";
+    color: #f7f7f7;
+    font-family: 'icomoon' !important;
+    font-size: 18px;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
 }
-.sidebar-bg{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: inline-block;
-    width: 170px;
-    height: 280px;
-    background-image: url("../img/sidebar_bg.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-}
+
 /*左侧菜单栏结束*/
 
-/*右侧主体*/
+/*--------------------------------------------------右侧主体--------------------------------------------------*/
 .view-main{
-
+    position: absolute;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 180px;
+    right: 0;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    box-shadow: inset 0px 2px 8.28px 0.72px rgba(198, 198, 198, 0.35);
 }
-/*右侧主体结束*/
+.view-main-container{
+    position: absolute;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+/*客服首页*/
+.box-ptb30-bbdd{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+.box-ptb30-bbdd:last-child{
+    border-bottom: 0;
+}
+.pre-login-in-time{
+    color: #1badc4;
+}
+.box-title-fs18{
+    font-size: 18px;
+    color: #404040;
+    margin-bottom: 20px;
+}
+.kjgn-item .icon-icon_medcial_record, .kjgn-item .icon-icon_dialog, .kjgn-item .icon-icon_suggestion, .kjgn-item .icon-icon_telephone, .kjgn-item .icon-icon_mail_box{
+    font-size: 34px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+.kjgn-item .icon-icon_medcial_record{
+    background-color: #1badc4;
+}
+.kjgn-item .icon-icon_dialog{
+    background-color: #2cc99f;
+}
+.kjgn-item .icon-icon_suggestion{
+    background-color: #49b7f2;
+}
+.kjgn-item .icon-icon_telephone{
+    background-color: #a08bce;
+}
+.kjgn-item .icon-icon_mail_box{
+    background-color: #de8090;
+}
+.kjgn-item .icon-icon_medcial_record:hover{
+    background-color: #31c0d6;
+}
+.kjgn-item .icon-icon_dialog:hover{
+    background-color: #49deb6;
+}
+.kjgn-item .icon-icon_suggestion:hover{
+    background-color: #6ec9fa;
+}
+.kjgn-item .icon-icon_telephone:hover{
+    background-color: #bbabdf;
+}
+.kjgn-item .icon-icon_mail_box:hover{
+    background-color: #ee9eab;
+}
+.kjgn-item .icon-icon_medcial_record:before, .kjgn-item .icon-icon_dialog:before, .kjgn-item .icon-icon_suggestion:before, .kjgn-item .icon-icon_telephone:before, .kjgn-item .icon-icon_mail_box:before{
+    position: relative;
+    top: 12px;
+}
+.box-title-left-icon{
+    font-size: 14px;
+    color: #999;
+    margin-right: 10px;
+}
+.kjgn .kjgn-item{
+    display: inline-block;
+    color: #666666;
+    text-decoration: none;
+}
+.tzgg-ul{
+    list-style-type: disc;
+    color: #999;
+}
+.tzgg-ul a{
+    color: #666666;
+}
+.tzgg-ul-flag-wrap{
+    position: relative;
+    width: 40px;
+    height: 15px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.tzgg-ul-flag-wrap .icon-icon_flag{
+    position: absolute;
+    z-index: 110;
+    top: -10px;
+    left: 0;
+    content: '\e903';
+    color: #ffad2d;
+    font-size: 40px;
+}
+.tzgg-ul-flag-wrap .tzgg-ul-flag-content{
+    position: absolute;
+    z-index: 120;
+    color: #ffffff;
+    font-size: 10px;
+    left: 4px;
+    top: 1px;
+    text-transform: uppercase;
+}
+.box-title-fs18 .default-a-more{
+    text-decoration: none;
+}
+.default-a-more{
+    float: right;
+    font-size: 14px;
+    color: #1badc4;
+    margin-right: 20px;
+}
+.thcl-item{
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.thcl-item{
+    position: relative;
+    color: #666;
+    font-size: 16px;
+    overflow: hidden;
+}
+.thcl-item-header{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.thcl-item-header .icon-icon_incoming{
+    font-size: 20px;
+    color: #72cf9b;
+    margin-right: 10px;
+}
+.thcl-item-footer{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+    color: #999999;
+}
+.thcl-item-num{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -38px;
+}
+.fs50-green{
+    font-size: 50px;
+    color: #72cf9b;
+    margin-right: 5px;
+}
+.fs50-yellow{
+    font-size: 50px;
+    color: #ffad2d;
+    margin-right: 5px;
+}
+/*客服首页结束*/
+
+/*接听*/
+.customer-tab-body{
+}
+
+/*接听结束*/
+
+/*--------------------------------------------------右侧主体结束*--------------------------------------------------/
