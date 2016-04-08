@@ -227,6 +227,7 @@ p{
     border-bottom:1px solid #ddd;
     border-left:1px solid #ddd;
     background-color: #ffffff;
+    padding: 50px;
 }
 /*封闭的nav结束*/
 
@@ -725,7 +726,41 @@ p{
 /*接听*/
 .customer-tab-body{
 }
-
+.grid1000{
+    width: 1000px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.step-mark-wrap{
+    margin-bottom: 50px;
+    height: 100%;
+}
+.step-mark-item{
+}
+.step-mark-item-circle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #d1d1d1;
+}
+.step-mark-item-text{
+    color: #999;
+}
+.step-mark-wrap .step-mark-item{
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 /*接听结束*/
 
 /*--------------------------------------------------右侧主体结束*--------------------------------------------------/
