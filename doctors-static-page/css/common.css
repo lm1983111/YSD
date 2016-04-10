@@ -726,14 +726,6 @@ p{
 /*接听*/
 .customer-tab-body{
 }
-.grid1000{
-    width: 1000px;
-    overflow: hidden;
-    overflow-y: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 .step-mark-wrap{
     margin-bottom: 50px;
     height: 100%;

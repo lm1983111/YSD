@@ -80,47 +80,131 @@
                             <li><a>拨号</a></li>
                         </ul>
                         <div class="tab-content">
-                            <div class="grid1000">
-                                <div class="step-mark-wrap">
-                                    <div class="row text-center">
-                                        <div class="col-sm-2">
-                                            <a class="step-mark-item">
-                                                <span class="step-mark-item-circle">1</span><br/>
-                                                <span class="step-mark-item-text">基本资料</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <a class="step-mark-item">
-                                                <span class="step-mark-item-circle">2</span><br/>
-                                                <span class="step-mark-item-text">现病史</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <a class="step-mark-item">
-                                                <span class="step-mark-item-circle">3</span><br/>
-                                                <span class="step-mark-item-text">既往史</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <a class="step-mark-item">
-                                                <span class="step-mark-item-circle">4</span><br/>
-                                                <span class="step-mark-item-text">个人史</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <a class="step-mark-item">
-                                                <span class="step-mark-item-circle">5</span><br/>
-                                                <span class="step-mark-item-text">家族史</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <a class="step-mark-item">
-                                                <span class="step-mark-item-circle">6</span><br/>
-                                                <span class="step-mark-item-text">推送给医生</span>
-                                            </a>
+                            <div class="step-mark-wrap">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="row text-center">
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">1</span><br/>
+                                                    <span class="step-mark-item-text">基本资料</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">2</span><br/>
+                                                    <span class="step-mark-item-text">现病史</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">3</span><br/>
+                                                    <span class="step-mark-item-text">既往史</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">4</span><br/>
+                                                    <span class="step-mark-item-text">个人史</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">5</span><br/>
+                                                    <span class="step-mark-item-text">家族史</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">6</span><br/>
+                                                    <span class="step-mark-item-text">推送给医生</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="basic-info-form-wrap">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <!--登入手机号-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">登入手机号：</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" placeholder="清输入手机号">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default">Go!</button>
+                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--姓名性别-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label"><span class="red">*</span>姓名：</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label"><span class="red">*</span>姓别：</label>
+                                                        <div class="col-sm-8">
+                                                            <select class="form-control">
+                                                                <option>男</option>
+                                                                <option>男</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--居住地址-->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label">居住地址：</label>
+                                                        <div class="col-md-2">
+                                                            <select class="form-control">
+                                                                <option>湖南</option>
+                                                                <option>湖南</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <select class="form-control">
+                                                                <option>长沙</option>
+                                                                <option>长沙</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <select class="form-control">
+                                                                <option>长沙县</option>
+                                                                <option>长沙县</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
