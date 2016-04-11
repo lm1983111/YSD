@@ -43,6 +43,22 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .w286{
     width: 286px;
 }
+
+.w500{width: 500px}
+.w600{width: 600px}
+.w700{width: 700px}
+
+.grid-plr15{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid-plr30{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .mr20{
     margin-right: 20px;
 }
@@ -115,6 +131,9 @@ a{
 .red{
     color: red;
 }
+.default-blue{
+    color: #1badc4;
+}
 p{
     color: #666666;
 }
@@ -147,7 +166,7 @@ p{
     line-height: 44px;
 }
 
-.btn-default {
+/*.btn-default {
     color: #333;
     background-color: #cccccc;
     border-color: #cccccc
@@ -163,7 +182,7 @@ p{
     color: #333;
     background-color: #e6e6e6;
     border-color: #e6e6e6
-}
+}*/
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
     outline: none;
@@ -174,18 +193,12 @@ p{
     background-color: #808080;
     color: #fff;
 }
-.btn-bg-gray-font-white2{
-    background-color: #b3b3b3;
-    color: #fff;
-}
+
 .btn-bg-gray-font-white:hover, .btn-bg-gray-font-white:focus{
     background-color: #696969;
     color: #fff;
 }
-.btn-bg-gray-font-white2:hover, .btn-bg-gray-font-white2:focus{
-    background-color: #969696;
-    color: #fff;
-}
+
 .btn-sm{
     padding: 0 15px;
     height: 32px;
@@ -242,20 +255,15 @@ p{
 .form-control:focus{
     box-shadow: none;
 }
-.w500{width: 500px}
-.w600{width: 600px}
-.w700{width: 700px}
-
-.grid-plr15{
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+.input-sm {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
 }
-
-.grid-plr30{
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+.input-group-addon{
+    border-radius: 0;
 }
 
 /* 相册  */
@@ -752,6 +760,38 @@ p{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+@media (min-width: 768px) {
+    .step-mark-line .col-sm-2:before{
+        position: absolute;
+        content: '';
+        display: block;
+        top: 15px;
+        left: -50%;
+        width: 100%;
+        border-bottom: 2px solid #D1D1D1;
+    }
+}
+.step-mark-line .col-sm-2{
+    position: relative;
+}
+
+.step-mark-line .col-sm-2:first-child:before{
+    border-bottom: 0;
+}
+.have-mark .step-mark-item-circle{
+    background-color: #1badc4;
+}
+.have-mark .step-mark-item-text{
+    color: #1badc4;
+}
+.col-sm-2.have-mark:before{
+    border-color: #1badc4;
+}
+.breadcrumb{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
 }
 /*接听结束*/
 
