@@ -3,8 +3,243 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>接听-既往史</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.less" type="text/css" rel="stylesheet/less">
 </head>
 <body>
+<div class="view-wrap">
+    <!--顶部菜单-->
+    <div class="view-topbar">
+        <div class="topbar-left"></div>
+        <div class="topbar-right">
+            <div class="topbar-right-item">
+                <a class="topbar-btn topbar-btn-portrait">
+                    <span class="thumb50-table">
+                        <span class="thumb50-table-cell"><img src="img/logo_index.png"></span>
+                    </span>
+                    <span>肖千山医生</span>
+                </a>
+            </div>
+            <div class="topbar-right-item">
+                <a class="topbar-btn">
+                    <span class="icon-icon_exit"></span>
+                    <span>退出</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--顶部菜单结束-->
+    <div class="view-body">
+        <div class="view-sidebar">
+            <div class="sidebar-item">
+                <a class="sidebar-item-title active" href="customer-index.html">
+                    <span class="icon-icon_home"></span>
+                    <span>工作台</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-call-record.html">
+                    <span class="icon-icon_phone"></span>
+                    <span>通话记录</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-medical-records.html">
+                    <span class="icon-icon_medcial_record"></span>
+                    <span>病历档案</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-suggestions-list.html">
+                    <span class="icon-icon_suggestion"></span>
+                    <span>投诉建议</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-knowledge-repository.html">
+                    <span class="icon-icon_study_info"></span>
+                    <span>学习资料</span>
+                </a>
+            </div>
+            <span class="sidebar-bg"></span>
+        </div>
+        <div class="view-main">
+            <div class="view-main-container">
+                <div class="breadcrumb">
+                    <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：工作台</span> >
+                    <span>建立档案</span>
+                </div>
+                <div class="grid-plr30">
+                    <div class="has-seal-nav customer-tab-body">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a><span class="icon-icon_medcial_record"></span>建立档案</a></li>
+                            <li><a><span class="icon-icon_dialog"></span>咨询</a></li>
+                            <li><a><span class="icon-icon_suggestion"></span>投诉建议</a></li>
+                            <li><a><span class="icon-icon_mail_box"></span>发短信</a></li>
+                            <li><a><span class="icon-icon_telephone"></span>拨号</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="step-mark-wrap">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="row text-center step-mark-line">
+                                            <div class="col-sm-2 have-mark">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">1</span><br/>
+                                                    <span class="step-mark-item-text">基本资料</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2 have-mark">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">2</span><br/>
+                                                    <span class="step-mark-item-text">现病史</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2 have-mark">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">3</span><br/>
+                                                    <span class="step-mark-item-text">既往史</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">4</span><br/>
+                                                    <span class="step-mark-item-text">个人史</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">5</span><br/>
+                                                    <span class="step-mark-item-text">家族史</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a class="step-mark-item">
+                                                    <span class="step-mark-item-circle">6</span><br/>
+                                                    <span class="step-mark-item-text">推送给医生</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basic-info-form-wrap">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <!--曾经患过的疾病-->
+                                        <div class="table-title-box1 clearfix">
+                                            <span class="fl">曾经患过的疾病</span>
+                                            <span class="btn btn-info-empty fr">+新增</span>
+                                        </div>
+                                        <table class="table table-bordered th-have-bgf1">
+                                            <colgroup>
+                                                <col class="w200">
+                                                <col class="">
+                                                <col class="w120">
+                                                <col class="w120">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>疾病</th>
+                                                    <th>相关</th>
+                                                    <th>确诊时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>糖尿病</td>
+                                                    <td>已经治愈</td>
+                                                    <td>2016-04-02</td>
+                                                    <td><a class="text-link-blue">修改</a><span class="text-link-interval"></span><a class="text-link-red">删除</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!--外伤手术-->
+                                        <div class="table-title-box1 clearfix">
+                                            <span class="fl">外伤手术</span>
+                                            <span class="btn btn-info-empty fr">+新增</span>
+                                        </div>
+                                        <table class="table table-bordered th-have-bgf1">
+                                            <colgroup>
+                                                <col class="w200">
+                                                <col class="">
+                                                <col class="w120">
+                                                <col class="w120">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>手术</th>
+                                                    <th>相关</th>
+                                                    <th>确诊时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>小腿骨折</td>
+                                                    <td>已经治愈</td>
+                                                    <td>2016-04-02</td>
+                                                    <td><a class="text-link-blue">修改</a><span class="text-link-interval"></span><a class="text-link-red">删除</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>小腿骨折</td>
+                                                    <td>已经治愈</td>
+                                                    <td>2016-04-02</td>
+                                                    <td><a class="text-link-blue">修改</a><span class="text-link-interval"></span><a class="text-link-red">删除</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!--过敏史-->
+                                        <div class="table-title-box1 clearfix">
+                                            <span class="fl">过敏史</span>
+                                            <span class="btn btn-info-empty fr">+新增</span>
+                                        </div>
+                                        <table class="table table-bordered th-have-bgf1">
+                                            <colgroup>
+                                                <col class="w200">
+                                                <col class="">
+                                                <col class="w120">
+                                                <col class="w120">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th>手术</th>
+                                                <th>相关</th>
+                                                <th>确诊时间</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>消毒素</td>
+                                                <td>有过敏影响</td>
+                                                <td>2016-04-02</td>
+                                                <td><a class="text-link-blue">修改</a><span class="text-link-interval"></span><a class="text-link-red">删除</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
 
+                                        <div class="row mtb50">
+                                            <div class="col-md-12">
+                                                <a href="customer-answer-now-record.html" class="btn btn-default">上一步</a>
+                                                <a href="customer-answer-personal-record.html" class="btn btn-info">下一步</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/less.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

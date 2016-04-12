@@ -2,9 +2,262 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>接听-个人历</title>
+    <title>接听-个人史</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.less" type="text/css" rel="stylesheet/less">
 </head>
 <body>
+<div class="view-wrap">
+<!--顶部菜单-->
+<div class="view-topbar">
+    <div class="topbar-left"></div>
+    <div class="topbar-right">
+        <div class="topbar-right-item">
+            <a class="topbar-btn topbar-btn-portrait">
+                    <span class="thumb50-table">
+                        <span class="thumb50-table-cell"><img src="img/logo_index.png"></span>
+                    </span>
+                <span>肖千山医生</span>
+            </a>
+        </div>
+        <div class="topbar-right-item">
+            <a class="topbar-btn">
+                <span class="icon-icon_exit"></span>
+                <span>退出</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--顶部菜单结束-->
+<div class="view-body">
+<div class="view-sidebar">
+    <div class="sidebar-item">
+        <a class="sidebar-item-title active" href="customer-index.html">
+            <span class="icon-icon_home"></span>
+            <span>工作台</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="customer-call-record.html">
+            <span class="icon-icon_phone"></span>
+            <span>通话记录</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="customer-medical-records.html">
+            <span class="icon-icon_medcial_record"></span>
+            <span>病历档案</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="customer-suggestions-list.html">
+            <span class="icon-icon_suggestion"></span>
+            <span>投诉建议</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="customer-knowledge-repository.html">
+            <span class="icon-icon_study_info"></span>
+            <span>学习资料</span>
+        </a>
+    </div>
+    <span class="sidebar-bg"></span>
+</div>
+<div class="view-main">
+    <div class="view-main-container">
+        <div class="breadcrumb">
+            <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：工作台</span> >
+            <span>建立档案</span>
+        </div>
+        <div class="grid-plr30">
+            <div class="has-seal-nav customer-tab-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a><span class="icon-icon_medcial_record"></span>建立档案</a></li>
+                    <li><a><span class="icon-icon_dialog"></span>咨询</a></li>
+                    <li><a><span class="icon-icon_suggestion"></span>投诉建议</a></li>
+                    <li><a><span class="icon-icon_mail_box"></span>发短信</a></li>
+                    <li><a><span class="icon-icon_telephone"></span>拨号</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="step-mark-wrap">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <div class="row text-center step-mark-line">
+                                    <div class="col-sm-2 have-mark">
+                                        <a class="step-mark-item">
+                                            <span class="step-mark-item-circle">1</span><br/>
+                                            <span class="step-mark-item-text">基本资料</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2 have-mark">
+                                        <a class="step-mark-item">
+                                            <span class="step-mark-item-circle">2</span><br/>
+                                            <span class="step-mark-item-text">现病史</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2 have-mark">
+                                        <a class="step-mark-item">
+                                            <span class="step-mark-item-circle">3</span><br/>
+                                            <span class="step-mark-item-text">既往史</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2 have-mark">
+                                        <a class="step-mark-item">
+                                            <span class="step-mark-item-circle">4</span><br/>
+                                            <span class="step-mark-item-text">个人史</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a class="step-mark-item">
+                                            <span class="step-mark-item-circle">5</span><br/>
+                                            <span class="step-mark-item-text">家族史</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a class="step-mark-item">
+                                            <span class="step-mark-item-circle">6</span><br/>
+                                            <span class="step-mark-item-text">推送给医生</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basic-info-form-wrap">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">有无治游史：</label>
+                                        <div class="col-md-3">
+                                            <select class="form-control">
+                                                <option>尖锐湿疣</option>
+                                                <option>尖锐湿疣</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-md-2 control-label">习惯嗜好：</label>
+                                        <div class="col-md-6">
+                                            <table class="table table-bordered th-have-bgf1">
+                                                <colgroup>
+                                                    <col class="w150">
+                                                    <col class="">
+                                                    <col class="">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>起居</th>
+                                                        <td colspan="2" class="no-padding">
+                                                            <select class="form-control">
+                                                                <option>规律</option>
+                                                                <option>规律</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>卫生</th>
+                                                        <td colspan="2" class="no-padding">
+                                                            <select class="form-control">
+                                                                <option>干净整齐</option>
+                                                                <option>干净整齐</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>饮食</th>
+                                                        <td colspan="2" class="no-padding">
+                                                            <select class="form-control">
+                                                                <option>嗜油</option>
+                                                                <option>清单</option>
+                                                                <option>重口味</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>吸烟</th>
+                                                        <td class="no-padding">
+                                                            <select class="form-control">
+                                                                <option>吸烟</option>
+                                                                <option>不吸烟</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="no-padding">
+                                                            <select class="form-control">
+                                                                <option>5根</option>
+                                                                <option>10根</option>
+                                                                <option>1包</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>饮酒</th>
+                                                        <td class="no-padding">
+                                                            <select class="form-control">
+                                                                <option>嗜酒</option>
+                                                                <option>从不饮酒</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="no-padding">
+                                                            <select class="form-control">
+                                                                <option>5毫升</option>
+                                                                <option>10毫升</option>
+                                                                <option>100毫升</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">绝经年龄：</label>
+                                        <div class="col-md-3">
+                                            <select class="form-control">
+                                                <option>30岁</option>
+                                                <option>30岁</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">怀孕：</label>
+                                        <div class="col-md-3">
+                                            <select class="form-control">
+                                                <option>30岁</option>
+                                                <option>30岁</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">产子：</label>
+                                        <div class="col-md-3">
+                                            <select class="form-control">
+                                                <option>30岁</option>
+                                                <option>30岁</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mtb50">
+                                        <div class="col-md-offset-2 col-md-3">
+                                            <a href="customer-answer-histroy-record.html" class="btn btn-default">上一步</a>
+                                            <a href="customer-answer-family-record.html" class="btn btn-info">下一步</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/less.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
