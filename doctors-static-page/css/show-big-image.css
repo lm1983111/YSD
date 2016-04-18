@@ -1,0 +1,98 @@
+/*100×60相册*/
+.thumb-w100-showimg-table{
+    display: table;
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    height: 60px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.thumb-w100-showimg-table-cell{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.thumb-w100-showimg-table-cell img{
+    max-width: 98px;
+    max-height: 58px;
+    cursor: pointer;
+}
+/*150×100相册*/
+.thumb-w150-showimg-table{
+    display: table;
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    height: 100px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.thumb-w150-showimg-table-cell{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.thumb-w150-showimg-table-cell img{
+    max-width: 148px;
+    max-height: 98px;
+    cursor: pointer;
+}
+/*js增加html样式*/
+.source-img-wrap{
+    position: absolute;
+    z-index: 8200;
+    display: block;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    background-color: #fff;
+    /*background-color: rgba(0,0,0,.3);*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+.source-img-wrap img{
+    display: inline-block;
+    max-width: 800px;
+    max-height: 500px;
+}
+.close-source-img{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.close-source-img:hover{
+    background-color: red;
+}
+.mask{
+    position: absolute;
+    z-index: 8100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    filter: alpha(opacity=60);
+    opacity: .6;
+}

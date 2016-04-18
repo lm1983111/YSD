@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>通话记录</title>
+    <title>病历档案列表</title>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/common.css" type="text/css" rel="stylesheet">
     <link href="css/styles.less" type="text/css" rel="stylesheet/less">
@@ -37,13 +37,13 @@
                 </a>
             </div>
             <div class="sidebar-item">
-                <a class="sidebar-item-title active" href="customer-call-record.html">
+                <a class="sidebar-item-title" href="customer-call-record.html">
                     <span class="icon-icon_phone"></span>
                     <span>通话记录</span>
                 </a>
             </div>
             <div class="sidebar-item">
-                <a class="sidebar-item-title" href="medical-file-list.html">
+                <a class="sidebar-item-title active" href="medical-file-list.html">
                     <span class="icon-icon_medcial_record"></span>
                     <span>病历档案</span>
                 </a>
@@ -77,20 +77,17 @@
         <div class="view-main">
             <div class="view-main-container">
                 <div class="breadcrumb">
-                    <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：通话记录</span>
+                    <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：病历档案</span>
                 </div>
                 <div class="grid-plr30">
                     <div class="search-form-nav clearfix">
+                        <div class="fl">
+                            <a class="btn btn-info">+新增</a>
+                        </div>
                         <div class="fr">
                             <form class="form-inline">
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option>最近一个月</option>
-                                        <option>最近三个月</option>
-                                    </select>
-                                </div>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="请输入手机号">
+                                    <input type="text" class="form-control" placeholder="请输入手机号、姓名">
                                     <span class="input-group-btn">
                                         <button class="btn btn-default h38 no-radius">
                                             <span class="glyphicon glyphicon-search"></span>
@@ -101,53 +98,26 @@
                         </div>
                     </div>
                     <table class="table table-bordered table-hover">
-                        <colgroup>
-                            <col class="w50">
-                            <col class="w150">
-                            <col class="w150">
-                            <col class="w200">
-                            <col class="w200">
-                            <col class="w200">
-                            <col class="w200">
-                        </colgroup>
                         <thead>
                         <tr>
-                            <th></th>
-                            <th>电话</th>
                             <th>姓名</th>
-                            <th>时间</th>
-                            <th>地区</th>
-                            <th>通话时间</th>
+                            <th>年龄</th>
+                            <th>性别</th>
+                            <th>电话</th>
+                            <th>化验报告</th>
+                            <th>问诊记录</th>
                             <th class="text-center">操作</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td class="text-center"><span class="icon-icon_outcoming"></span></td>
-                            <td>18858698745</td>
                             <td><a href="medical-file.html" class="text-link-blue">肖千山</a></td>
-                            <td>2016/04/04 13:30</td>
-                            <td>湖南 长沙</td>
-                            <td>5分51秒</td>
-                            <td class="text-center"><a class="btn btn-info-empty"><span class="icon-icon_phone_wifi mr5"></span>回拨</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"><span class="icon-icon_incoming"></span></td>
-                            <td>18858698745</td>
-                            <td><a href="medical-file.html" class="text-link-blue">肖千山</a></td>
-                            <td>2016/04/04 13:30</td>
-                            <td>湖南 长沙</td>
-                            <td>5分</td>
-                            <td class="text-center"><a class="btn btn-info-empty"><span class="icon-icon_phone_wifi mr5"></span>回拨</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"><span class="icon-icon_incoming"></span></td>
-                            <td>18858698745</td>
-                            <td><a href="medical-file.html" class="text-link-blue">肖千山</a></td>
-                            <td>2016/04/04 13:30</td>
-                            <td>湖南 长沙</td>
-                            <td>5分</td>
-                            <td class="text-center"><a class="btn btn-info-empty"><span class="icon-icon_phone_wifi mr5"></span>回拨</a></td>
+                            <td>45岁</td>
+                            <td>男</td>
+                            <td>18698525468</td>
+                            <td>3张</td>
+                            <td>5次</td>
+                            <td class="text-center"><a href="customer-answer-basic-info.html" class="text-link-blue">修改</a></td>
                         </tr>
                         </tbody>
                         <tfoot>
