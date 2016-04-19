@@ -3,8 +3,363 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>患者列表</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
+<div class="view-wrap">
+    <!--顶部菜单-->
+    <div class="view-topbar">
+        <div class="topbar-left"></div>
+        <div class="topbar-right">
+            <div class="topbar-right-item">
+                <a class="topbar-btn">
+                    <img class="topbar-btn-portrait-img" src="img/gallery1.jpg">
+                    <span>肖千山医生</span>
+                </a>
+            </div>
+            <div class="topbar-right-item">
+                <a class="topbar-btn">
+                    <span class="icon-icon_exit"></span>
+                    <span>退出</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--顶部菜单结束-->
+    <div class="view-body">
+        <div class="view-sidebar">
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-index.html">
+                    <span class="icon-icon_home"></span>
+                    <span>工作台</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-call-record.html">
+                    <span class="icon-icon_phone"></span>
+                    <span>通话记录</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="medical-file-list.html">
+                    <span class="icon-icon_medcial_record"></span>
+                    <span>病历档案</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-suggestions-list.html">
+                    <span class="icon-icon_suggestion"></span>
+                    <span>投诉建议</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-knowledge-repository.html">
+                    <span class="icon-icon_study_info"></span>
+                    <span>学习资料</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title active" href="doctor-patient-treatment-list.html">
+                    <span class="icon-icon_patient"></span>
+                    <span>患者列表</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="doctor-visit-record-list.html">
+                    <span class="icon-icon_treatment"></span>
+                    <span>问诊历史</span>
+                </a>
+            </div>
+            <span class="sidebar-bg"></span>
+        </div>
+        <div class="view-main">
+            <div class="view-main-container">
+                <div class="breadcrumb">
+                    <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：患者列表</span>
+                </div>
+                <div class="grid-plr30">
+                    <div class="search-form-nav clearfix">
+                        <div class="fl">
+                        </div>
+                        <div class="fr">
+                            <form class="form-inline">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="请输入手机号、姓名">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default h38 no-radius">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="adaptive-con-wrap">
+                        <div class="adaptive-con clearfix">
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a href="doctor-patient-treatment.html" class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，四肢无力血压降不下来，四肢无力血压降不下来，四肢无力血压降不下来，四肢无力四肢无力，四肢无力血压降不下来，四肢无力四肢无力</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--重复9个-->
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adaptive-box-item">
+                                <div class="adaptive-box">
+                                    <div class="ad-portrait">
+                                        <img class="ad-portrait-img" src="img/index_portrait.png">
+                                    </div>
+                                    <div class="ad-con">
+                                        <div class="row mb8">
+                                            <div class="col-xs-6"><a class="ad-con-name">肖千山</a></div>
+                                            <div class="col-xs-3">56岁</div>
+                                            <div class="col-xs-3 text-right">男</div>
+                                        </div>
+                                        <div class="row mb12">
+                                            <div class="col-xs-6">18695856542</div>
+                                            <div class="col-xs-6 text-right">2016/04/04</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 zhusu">主诉：血压降不下来，四肢无力血压降不下来，感觉对身体有严重影响</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <!--重复9个结束-->
+                        </div>
+
+                        <div class="ui1-pagination-wrap">
+                            <div class="fl">
+                            <span class="ui1-pagination-total-data-tip">
+                                共有<span class="default-blue"> 50 </span>条，每页显示：20条
+                            </span>
+                            </div>
+                            <div class="fr">
+                                <div class="ui1-pagination-page">
+                                    <!--<a><span class="glyphicon glyphicon-menu-left"></span></a>-->
+                                    <a class="disabled"><span class="glyphicon glyphicon-menu-left"></span></a>
+                                    <a class="cur">1</a>
+                                    <a>2</a>
+                                    <a>3</a>
+                                    <a>4</a>
+                                    <a>5</a>
+                                    <a>6</a>
+                                    <a>7</a>
+                                    <span class="c999">...</span>
+                                    <a>100</a>
+                                    <a><span class="glyphicon glyphicon-menu-right"></span></a>
+                                </div>
+                                <div class="ui1-pagination-goto">
+                                    <span>跳转到</span>
+                                    <input type="text" class="form-control ipt">
+                                    <span>页</span>
+                                    <input type="submit" class="btn btn-default ui1-pagination-go" value="确定">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+    $(function(){
+        $(".zhusu").each(function(){
+            var maxZhusuLen = 45;
+            var realZhusu = $(this).text();
+            if(realZhusu.length > maxZhusuLen){
+                var cutZhusu = realZhusu.substring(0,maxZhusuLen);
+                $(this).html(cutZhusu + "...")
+            }
+        })
+    })
+</script>
 </body>
 </html>

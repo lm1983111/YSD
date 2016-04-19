@@ -3,8 +3,371 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>患者问诊</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/show-big-image.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<div class="view-wrap">
+<!--顶部菜单-->
+<div class="view-topbar">
+    <div class="topbar-left"></div>
+    <div class="topbar-right">
+        <div class="topbar-right-item">
+            <a class="topbar-btn">
+                <img class="topbar-btn-portrait-img" src="img/gallery1.jpg">
+                <span>肖千山医生</span>
+            </a>
+        </div>
+        <div class="topbar-right-item">
+            <a class="topbar-btn">
+                <span class="icon-icon_exit"></span>
+                <span>退出</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--顶部菜单结束-->
+<div class="view-body">
+<div class="view-sidebar">
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="customer-index.html">
+            <span class="icon-icon_home"></span>
+            <span>工作台</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="customer-call-record.html">
+            <span class="icon-icon_phone"></span>
+            <span>通话记录</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="medical-file-list.html">
+            <span class="icon-icon_medcial_record"></span>
+            <span>病历档案</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="customer-suggestions-list.html">
+            <span class="icon-icon_suggestion"></span>
+            <span>投诉建议</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="customer-knowledge-repository.html">
+            <span class="icon-icon_study_info"></span>
+            <span>学习资料</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title active" href="doctor-patient-treatment-list.html">
+            <span class="icon-icon_patient"></span>
+            <span>患者列表</span>
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a class="sidebar-item-title" href="doctor-visit-record-list.html">
+            <span class="icon-icon_treatment"></span>
+            <span>问诊历史</span>
+        </a>
+    </div>
+    <span class="sidebar-bg"></span>
+</div>
+<div class="view-main">
+<div class="view-main-container">
+<div class="breadcrumb">
+    <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：患者列表</span> > 档案详情
+</div>
+<div class="grid-plr30">
+<div class="ui2-tab-content">
+<div class="ui2-tab-content-header clearfix">
+    <div class="fl">肖千山档案</div>
+    <div class="fr">
+        <span class="default-blue mr20">18975851589</span><a href="doctor-treatment-now-record.html" class="btn btn-info"><span class="icon-icon_phone_wifi mr5"></span>开始问诊</a>
+    </div>
+</div>
+<div class="mt8 clearfix relative">
+<div class="cmr-customer-portrait-wrap">
+    <img class="cmr-customer-portrait-img" src="img/gallery1.jpg">
+</div>
+<div class="pl120">
+<!--基本资料-->
+<div class="mb50">
+    <table class="table table-bordered th-have-bgf9">
+        <tbody>
+        <tr>
+            <th>姓名：</th>
+            <td>肖千山</td>
+            <th>婚姻：</th>
+            <td>已婚</td>
+            <th>医保情况：</th>
+            <td>城镇居民医保</td>
+        </tr>
+        <tr>
+            <th>性别：</th>
+            <td>男</td>
+            <th>职业：</th>
+            <td>公务员</td>
+            <th>急救电话：</th>
+            <td>18854587585</td>
+        </tr>
+        <tr>
+            <th>出生日期：</th>
+            <td>1988/04/04</td>
+            <th>最高血压：</th>
+            <td><span class="mr5">收缩压：50mmHg</span><span class="mr5">舒张压：50mmHg</span></td>
+            <th>急救联系人：</th>
+            <td>小小小</td>
+        </tr>
+        <tr>
+            <th>民族：</th>
+            <td>汉族</td>
+            <th>手机号：</th>
+            <td>15525252526</td>
+            <th>急救地址：</th>
+            <td>长沙市经济技术开发区盼盼路9号</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--基本资料结束-->
+<div class="row">
+<div class="col-lg-8">
+<div class="mb50">
+    <!--问诊记录-->
+    <div class="table-title-box1 clearfix">
+        <span class="fl">问诊记录</span>
+    </div>
+    <table class="table cap-inquiry-record-table  table-hover">
+        <colgroup>
+            <col class="w150">
+            <col class="w150">
+            <col class="">
+        </colgroup>
+        <tbody>
+        <tr>
+            <td><span class="icon-icon_clock"></span>2016/04/04</td>
+            <td><span class="icon-icon_doctor"></span>杨忠忠医生</td>
+            <td><span class="icon-icon_four_square_cricle"></span>主诉：四肢无力头昏眼花头昏眼花</td>
+        </tr>
+        <tr>
+            <td><span class="icon-icon_clock"></span>2016/04/04</td>
+            <td><span class="icon-icon_doctor"></span>杨忠忠医生</td>
+            <td><span class="icon-icon_four_square_cricle"></span>主诉：四肢无力头昏眼花头昏眼花</td>
+        </tr>
+        <tr>
+            <td><span class="icon-icon_clock"></span>2016/04/04</td>
+            <td><span class="icon-icon_doctor"></span>杨忠忠医生</td>
+            <td><span class="icon-icon_four_square_cricle"></span>主诉：四肢无力头昏眼花头昏眼花四肢无力头昏眼花头昏眼花四肢无力头昏眼花头昏眼花四肢无力头昏眼花头昏眼花四肢无力头昏眼花头昏眼花</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 
+
+<div class="mb50">
+    <!--曾经患过的疾病-->
+    <div class="table-title-box1 clearfix">
+        <span class="fl">曾经患过的疾病</span>
+    </div>
+    <table class="table table-bordered table-hover">
+        <colgroup>
+            <col class="w200">
+            <col class="">
+            <col class="w120">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>疾病</th>
+            <th>相关</th>
+            <th>确诊时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>糖尿病</td>
+            <td>已经治愈</td>
+            <td>2016/04/04</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--外伤手术-->
+    <div class="table-title-box1 clearfix">
+        <span class="fl">外伤手术</span>
+    </div>
+    <table class="table table-bordered table-hover">
+        <colgroup>
+            <col class="w200">
+            <col class="">
+            <col class="w120">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>手术</th>
+            <th>相关</th>
+            <th>确诊时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>小腿骨折</td>
+            <td>已经治愈</td>
+            <td>2016/04/04</td>
+        </tr>
+        <tr>
+            <td>小腿骨折</td>
+            <td>已经治愈</td>
+            <td>2016/04/04</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--过敏史-->
+    <div class="table-title-box1 clearfix">
+        <span class="fl">过敏史</span>
+    </div>
+    <table class="table table-bordered table-hover">
+        <colgroup>
+            <col class="w200">
+            <col class="">
+            <col class="w120">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>手术</th>
+            <th>相关</th>
+            <th>确诊时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>消毒素</td>
+            <td>有过敏影响</td>
+            <td>2016/04/04</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="mb50">
+    <!--个人史-->
+    <div class="table-title-box1 clearfix">
+        <span class="fl">有无治游史</span>
+    </div>
+    <div class="youwuzhiyoushi">
+        尖锐湿疣
+    </div>
+    <div class="table-title-box1 clearfix">
+        <span class="fl">习惯嗜好</span>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>起居</th>
+            <th>卫生</th>
+            <th>饮食</th>
+            <th>吸烟</th>
+            <th>饮酒</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>规律</td>
+            <td>干净整齐</td>
+            <td>嗜油</td>
+            <td>5根/天</td>
+            <td>5毫升/天</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>绝经年龄</th>
+            <th>怀孕</th>
+            <th>产子</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>30岁</td>
+            <td>30岁</td>
+            <td>30岁</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="mb50">
+    <!--家族史-->
+    <div class="table-title-box1 clearfix">
+        <span class="fl">家族史</span>
+    </div>
+    <table class="table table-bordered table-hover">
+        <colgroup>
+            <col class="w120">
+            <col class="w200">
+            <col class="">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>家庭成员</th>
+            <th>疾病</th>
+            <th>健康状况</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>爸爸</td>
+            <td>高血压</td>
+            <td>描述</td>
+        </tr>
+        <tr>
+            <td>爸爸</td>
+            <td>高血压</td>
+            <td>描述</td>
+        </tr>
+        <tr>
+            <td>爸爸</td>
+            <td>高血压</td>
+            <td>描述</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="mb50">
+    <div class="table-title-box1 clearfix">
+        <span class="fl">化验单</span>
+    </div>
+    <div class="thumb-inline">
+        <div class="thumb-w150-showimg-table">
+            <div class="thumb-w150-showimg-table-cell">
+                <img onclick="showSourceImg(event)" src="img/gallery1.jpg">
+            </div>
+        </div>
+        <div class="thumb-w150-showimg-table">
+            <div class="thumb-w150-showimg-table-cell">
+                <img onclick="showSourceImg(event)" src="img/3605.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/show-big-image.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

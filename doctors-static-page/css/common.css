@@ -75,8 +75,17 @@ width: 150px;
 .mb5{
     margin-bottom: 5px;
 }
+.mb8{
+    margin-bottom: 8px;
+}
 .mb10{
     margin-bottom: 10px;
+}
+.mb12{
+    margin-bottom: 12px;
+}
+.mb15{
+    margin-bottom: 15px;
 }
 .mb20{
     margin-bottom: 20px;
@@ -229,6 +238,7 @@ tfoot{
 /*panination*/
 .ui1-pagination-wrap{
     padding-right: 20px;
+    padding-left: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -938,21 +948,40 @@ tfoot{
         width: 100%;
         border-bottom: 2px solid #D1D1D1;
     }
+    .step-mark-line .col-sm-4:before{
+        position: absolute;
+        content: '';
+        display: block;
+        top: 15px;
+        left: -50%;
+        width: 100%;
+        border-bottom: 2px solid #D1D1D1;
+    }
 }
-.step-mark-line .col-sm-2{
+.step-mark-line .col-sm-2, .step-mark-line .col-sm-4{
     position: relative;
 }
 
 .step-mark-line .col-sm-2:first-child:before{
     border-bottom: 0;
 }
+
+.step-mark-line .col-sm-4.first-step:before{
+    border-bottom: 0;
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .step-mark-line .col-sm-4:first-child:before{
+        border-bottom: 0;
+    }
+}
+
 .have-mark .step-mark-item-circle{
     background-color: #1badc4;
 }
 .have-mark .step-mark-item-text{
     color: #1badc4;
 }
-.col-sm-2.have-mark:before{
+.col-sm-2.have-mark:before, .col-sm-4.have-mark:before{
     border-color: #1badc4;
 }
 .breadcrumb{
@@ -1044,6 +1073,7 @@ tfoot{
 .ui2-tab-content{
     padding: 25px;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 .ui2-tab-content-header{
     position: relative;
@@ -1077,4 +1107,108 @@ tfoot{
 }
 /*详情结束*/
 
+/*医生问诊列表*/
+/*adaptive-box固定宽380，两个adaptive-box-item之间的间距最小20, 加上左边nav宽与grid的padding=240那么外容器adaptive-box就有了几个阶段宽度760+40+240=1040，1140+60+240=1440, 1520+80+240=1840*/
+/*adaptive-box固定宽380，两个adaptive-box-item之间的间距最大40, 加上左边nav宽与grid的padding=240那么外容器adaptive-box就有了几个阶段宽度760+80+240=1080，1140+120+240=1500，1520+160+240=1920*/
+.adaptive-con-wrap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.adaptive-con{
+    width: 100%;
+}
+.adaptive-box-item{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+}
+.adaptive-box{
+    position: relative;
+    height: 160px;
+    width: 380px;
+    overflow: hidden;
+    padding: 20px;
+    display: block;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #404040;
+    -webkit-transition: all ease-in-out .15s;
+    transition: all ease-in-out .15s;
+}
+.adaptive-box:hover{
+    border-color: #1badc4;
+    box-shadow: 0px 2px 8.28px 0.72px rgba(198, 198, 198, 0.35);
+}
+@media screen and (min-width: 1840px) { /* Columns increased to 4 */
+    .adaptive-con-wrap {
+        max-width: 1920px;
+    }
+    .adaptive-box-item {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1840px) and (min-width: 1440px) { /* Columns decreased to 3 */
+    .adaptive-con-wrap {
+        max-width: 1500px;
+    }
+    .adaptive-box-item {
+        width: 33.3%;
+    }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1040px) {/* Columns decreased to 2 */
+    .adaptive-con-wrap{
+        max-width: 1080px;
+    }
+    .adaptive-box-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1040px) { /* Columns decreased to 1 */
+    .adaptive-box-item {
+        width: 100%;
+    }
+}
+
+.ad-portrait{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    float: left;
+}
+.ad-portrait-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.ad-con{
+    padding-left: 80px;
+    height: 100%;
+}
+.ad-con .col-xs-3, .ad-con .col-xs-6{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.zhusu{
+    color: #888;
+}
+.ad-con-name{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1badc4;
+}
+.ad-con-name:hover{
+    color: #1badc4;
+    text-decoration: underline;
+}
+/*医生问诊列表结束*/
 /*--------------------------------------------------右侧主体结束*--------------------------------------------------/
