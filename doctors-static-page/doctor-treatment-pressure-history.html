@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <title>问诊-血压记录</title>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/tab.css" type="text/css" rel="stylesheet">
     <link href="css/common.css" type="text/css" rel="stylesheet">
     <link href="css/styles.less" type="text/css" rel="stylesheet/less">
+    <!--[if lt IE 9 ]>
+    <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/compatible.css"/>
+    <![endif]-->
+    <script src="js/modernizr-2.8.3.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap">
+<div class="view-wrap have-min-w990">
 <!--顶部菜单-->
 <div class="view-topbar">
     <div class="topbar-left"></div>
@@ -79,12 +86,12 @@
             <div class="breadcrumb">
                 <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：患者列表</span> > <span>基本资料</span>
             </div>
-            <div class="grid-plr30">
+            <div class="grid-plrb15">
                 <div class="ui2-tab-content">
                     <div class="ui2-tab-content-header clearfix">
                         <div class="fl">肖千山档案</div>
                         <div class="fr">
-                            <a class="btn btn-info">完成问诊</a>
+                            <a href="doctor-patient-treatment-list.html" class="btn btn-info">完成问诊</a>
                         </div>
                     </div>
                     <div class="mt8 clearfix relative">
@@ -165,16 +172,117 @@
                         <div class="basic-info-form-wrap">
                             <div class="row">
                                 <div class="col-lg-8 col-lg-offset-2">
-
-                                    <div class="row mtb50">
-                                        <div class="col-md-12">
-                                            <a href="doctor-treatment-family-record.html" class="btn btn-default">上一步</a>
-                                            <a href="doctor-treatment-test-report.html" class="btn btn-info">下一步</a>
+                                    <ul class="tab-nav ui1-tab-nav" id="tabNav">
+                                        <li><a href="#" name="#tab1">列表</a></li>
+                                        <li><a href="#" name="#tab2">曲线图</a></li>
+                                    </ul>
+                                    <div class="switch-tab-content" id="tabContent">
+                                        <div class="dtphp-list-wrap" id="tab1">
+                                            <div class="dtphp-list-box phone-red-big">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">高度</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box phone-red-middle">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">中度</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box phone-red-small">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">轻度</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box phone-yellow">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">轻度</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box phone-blue">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">正常</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box phone-green">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">最佳</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box pen-red-big">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">高度</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box pen-red-middle">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">中度</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box pen-red-small">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">轻度</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box pen-yellow">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">轻度</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box pen-blue">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">正常</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
+                                            <div class="dtphp-list-box pen-green">
+                                                <div class="item-status">
+                                                    <div class="item-status-text">最佳</div>
+                                                </div>
+                                                <div class="item-pressure-num"><span class="fs27-c40 mr5">125/85</span>mmHg</div>
+                                                <div class="item-heart-num"><span class="fs27-c40 mr5">80</span>次/分</div>
+                                                <div class="item-test-time"><span class="icon-icon_clock mr5"></span>2016/04/04 15:32</div>
+                                            </div>
                                         </div>
+                                        <div id="tab2">2</div>
+                                    </div>
+                                    <div class="tool-bar">
+                                        <a href="doctor-treatment-family-record.html" class="btn btn-default">上一步</a>
+                                        <a href="doctor-treatment-test-report.html" class="btn btn-info">下一步</a>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -186,6 +294,7 @@
 <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/less.js" type="text/javascript"></script>
+<script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

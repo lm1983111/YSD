@@ -3,8 +3,212 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>问诊-病程记录</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.less" type="text/css" rel="stylesheet/less">
+    <!--[if lt IE 9 ]>
+    <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/compatible.css"/>
+    <![endif]-->
+    <script src="js/modernizr-2.8.3.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
+<div class="view-wrap">
+<!--顶部菜单-->
+<div class="view-topbar">
+    <div class="topbar-left"></div>
+    <div class="topbar-right">
+        <div class="topbar-right-item">
+            <a class="topbar-btn">
+                <img class="topbar-btn-portrait-img" src="img/gallery1.jpg">
+                <span>肖千山医生</span>
+            </a>
+        </div>
+        <div class="topbar-right-item">
+            <a class="topbar-btn">
+                <span class="icon-icon_exit"></span>
+                <span>退出</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--顶部菜单结束-->
+<div class="view-body">
+    <div class="view-sidebar">
+        <div class="sidebar-item">
+            <a class="sidebar-item-title" href="customer-index.html">
+                <span class="icon-icon_home"></span>
+                <span>工作台</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a class="sidebar-item-title" href="customer-call-record.html">
+                <span class="icon-icon_phone"></span>
+                <span>通话记录</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a class="sidebar-item-title" href="medical-file-list.html">
+                <span class="icon-icon_medcial_record"></span>
+                <span>病历档案</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a class="sidebar-item-title" href="customer-suggestions-list.html">
+                <span class="icon-icon_suggestion"></span>
+                <span>投诉建议</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a class="sidebar-item-title" href="customer-knowledge-repository.html">
+                <span class="icon-icon_study_info"></span>
+                <span>学习资料</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a class="sidebar-item-title active" href="doctor-patient-treatment-list.html">
+                <span class="icon-icon_patient"></span>
+                <span>患者列表</span>
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a class="sidebar-item-title" href="doctor-visit-record-list.html">
+                <span class="icon-icon_treatment"></span>
+                <span>问诊历史</span>
+            </a>
+        </div>
+        <span class="sidebar-bg"></span>
+    </div>
+    <div class="view-main">
+        <div class="view-main-container">
+            <div class="breadcrumb">
+                <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：患者列表</span> > <span>基本资料</span>
+            </div>
+            <div class="grid-plrb15">
+                <div class="ui2-tab-content">
+                    <div class="ui2-tab-content-header clearfix">
+                        <div class="fl">肖千山档案</div>
+                        <div class="fr">
+                            <a href="doctor-patient-treatment-list.html" class="btn btn-info">完成问诊</a>
+                        </div>
+                    </div>
+                    <div class="mt8 clearfix relative">
+                        <div class="step-mark-wrap">
+                            <div class="row">
+                                <div class="col-lg-10 col-lg-offset-1">
+                                    <div class="row text-center step-mark-line">
+                                        <div class="col-lg-4">
+                                            <div class="row">
+                                                <div class="col-sm-4 first-step have-mark">
+                                                    <a href="doctor-treatment-basic-info.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">1</span><br>
+                                                        <span class="step-mark-item-text">基本资料</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 have-mark">
+                                                    <a href="doctor-treatment-now-record.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">2</span><br>
+                                                        <span class="step-mark-item-text">现病史</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 have-mark">
+                                                    <a href="doctor-treatment-history-record.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">3</span><br>
+                                                        <span class="step-mark-item-text">既往史</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row">
+                                                <div class="col-sm-4 have-mark">
+                                                    <a href="doctor-treatment-personal-record.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">4</span><br>
+                                                        <span class="step-mark-item-text">个人史</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 have-mark">
+                                                    <a href="doctor-treatment-family-record.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">5</span><br>
+                                                        <span class="step-mark-item-text">家族史</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 have-mark">
+                                                    <a href="doctor-treatment-pressure-history.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">6</span><br>
+                                                        <span class="step-mark-item-text">血压记录</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row">
+                                                <div class="col-sm-4 have-mark">
+                                                    <a href="doctor-treatment-test-report.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">7</span><br>
+                                                        <span class="step-mark-item-text">检测报告</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 have-mark">
+                                                    <a href="doctor-treatment-diagnosis-prescription.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">8</span><br>
+                                                        <span class="step-mark-item-text">诊断处方</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 have-mark">
+                                                    <a href="doctor-treatment-course-record.html" class="step-mark-item">
+                                                        <span class="step-mark-item-circle">9</span><br>
+                                                        <span class="step-mark-item-text">病程记</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic-info-form-wrap">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">本次问诊标签：</label>
+                                            <div class="col-md-3">
+                                                <select class="form-control">
+                                                    <option>选择标签</option>
+                                                    <option>已经解决</option>
+                                                    <option>有疑问</option>
+                                                    <option>暂不能处理</option>
+                                                    <option>其它</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">病程记录：</label>
+                                            <div class="col-md-8">
+                                                <textarea class="form-control" rows="6"></textarea>
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                    <div class="tool-bar">
+                                        <a href="doctor-treatment-diagnosis-prescription.html" class="btn btn-default">上一步</a>
+                                        <a class="btn btn-info">保存档案</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/less.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

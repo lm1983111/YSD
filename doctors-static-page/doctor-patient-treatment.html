@@ -6,9 +6,15 @@
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/show-big-image.css" type="text/css" rel="stylesheet">
     <link href="css/common.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 9 ]>
+    <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/compatible.css"/>
+    <![endif]-->
+    <script src="js/modernizr-2.8.3.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap">
+<div class="view-wrap have-min-w990">
 <!--顶部菜单-->
 <div class="view-topbar">
     <div class="topbar-left"></div>
@@ -79,7 +85,7 @@
 <div class="breadcrumb">
     <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：患者列表</span> > 档案详情
 </div>
-<div class="grid-plr30">
+<div class="grid-plrb15">
 <div class="ui2-tab-content">
 <div class="ui2-tab-content-header clearfix">
     <div class="fl">肖千山档案</div>
@@ -342,14 +348,14 @@
     <div class="table-title-box1 clearfix">
         <span class="fl">化验单</span>
     </div>
-    <div class="thumb-inline">
-        <div class="thumb-w150-showimg-table">
-            <div class="thumb-w150-showimg-table-cell">
+    <div class="assay-wrap">
+        <div class="thumb150-table">
+            <div class="thumb150-table-cell">
                 <img onclick="showSourceImg(event)" src="img/gallery1.jpg">
             </div>
         </div>
-        <div class="thumb-w150-showimg-table">
-            <div class="thumb-w150-showimg-table-cell">
+        <div class="thumb150-table">
+            <div class="thumb150-table-cell">
                 <img onclick="showSourceImg(event)" src="img/3605.jpg">
             </div>
         </div>
@@ -366,6 +372,57 @@
 </div>
 </div>
 </div>
+<!--弹出框-->
+<div class="pop-up-window">
+    <div class="pop-up-window-header">
+        <div class="pop-up-window-title">王小帅的问诊记录</div>
+        <div class="pop-up-window-close">×</div>
+    </div>
+    <div class="pop-up-window-content">
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">问诊日期：</label>
+            <div class="col-md-9">2016/04/04</div>
+        </div>
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">问诊类型：</label>
+            <div class="col-md-9">电话问诊</div>
+        </div>
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">接诊医生：</label>
+            <div class="col-md-9">李雷教授</div>
+        </div>
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">主诉：</label>
+            <div class="col-md-9">头晕四肢乏力，不想运动，不想吃饭胃痛</div>
+        </div>
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">现病史：</label>
+            <div class="col-md-9">1、起病情况与患病的主要症状。2、起病情况与患病的主要症状。3、起病情况与患病的主要症状。4、起病情况与患病的主要症状。</div>
+        </div>
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">诊断说明：</label>
+            <div class="col-md-9">您当前为一级高血压，需要适当的药物治疗</div>
+        </div>
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">用药建议：</label>
+            <div class="col-md-9">
+                <div>1、比索洛尔片 5mg*10片*每盒 5mg/次 口服 1次/天</div>
+                <div>2、比索洛尔片 5mg*10片*每盒 5mg/次 口服 1次/天</div>
+            </div>
+        </div>
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">运动饮食：</label>
+            <div class="col-md-9">适当运动</div>
+        </div>
+        <div class="row mb15">
+            <label class="col-md-3 control-label text-right">温馨提示：</label>
+            <div class="col-md-9">按时吃药，多喝水，适当运动</div>
+        </div>
+    </div>
+    <div class="pop-up-window-footer">
+    </div>
+</div>
+<!--弹出框结束-->
 <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/show-big-image.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>

@@ -6,6 +6,12 @@
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/common.css" type="text/css" rel="stylesheet">
     <link href="css/styles.less" type="text/css" rel="stylesheet/less">
+    <!--[if lt IE 9 ]>
+    <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/compatible.css"/>
+    <![endif]-->
+    <script src="js/modernizr-2.8.3.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <div class="view-wrap">
@@ -80,7 +86,7 @@
             <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：工作台</span> >
             <span>建立档案</span>
         </div>
-        <div class="grid-plr30">
+        <div class="grid-plrb15">
             <div class="has-seal-nav customer-tab-body">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="customer-answer-basic-info.html"><span class="icon-icon_medcial_record"></span>建立档案</a></li>
@@ -177,11 +183,9 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="row mtb50">
-                                    <div class="col-md-12">
-                                        <a href="customer-answer-personal-record.html" class="btn btn-default">上一步</a>
-                                        <a href="customer-answer-push.html" class="btn btn-info">下一步</a>
-                                    </div>
+                                <div class="tool-bar">
+                                    <a href="customer-answer-personal-record.html" class="btn btn-default">上一步</a>
+                                    <a href="customer-answer-push.html" class="btn btn-info">下一步</a>
                                 </div>
                             </div>
                         </div>

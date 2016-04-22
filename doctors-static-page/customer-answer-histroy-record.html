@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <title>接听-既往史</title>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" type="text/css" rel="stylesheet">
     <link href="css/common.css" type="text/css" rel="stylesheet">
     <link href="css/styles.less" type="text/css" rel="stylesheet/less">
+    <!--[if lt IE 9 ]>
+    <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/compatible.css"/>
+    <![endif]-->
+    <script src="js/modernizr-2.8.3.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <div class="view-wrap">
@@ -80,7 +87,7 @@
                     <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：工作台</span> >
                     <span>建立档案</span>
                 </div>
-                <div class="grid-plr30">
+                <div class="grid-plrb15">
                     <div class="has-seal-nav customer-tab-body">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="customer-answer-basic-info.html"><span class="icon-icon_medcial_record"></span>建立档案</a></li>
@@ -231,11 +238,9 @@
                                             </tbody>
                                         </table>
 
-                                        <div class="row mtb50">
-                                            <div class="col-md-12">
-                                                <a href="customer-answer-now-record.html" class="btn btn-default">上一步</a>
-                                                <a href="customer-answer-personal-record.html" class="btn btn-info">下一步</a>
-                                            </div>
+                                        <div class="tool-bar">
+                                            <a href="customer-answer-now-record.html" class="btn btn-default">上一步</a>
+                                            <a href="customer-answer-personal-record.html" class="btn btn-info">下一步</a>
                                         </div>
                                     </div>
                                 </div>
@@ -248,8 +253,56 @@
         </div>
     </div>
 </div>
+<!--弹出框-->
+<div class="pop-up-window">
+    <div class="pop-up-window-header">
+        <div class="pop-up-window-title">患过的疾病</div>
+        <div class="pop-up-window-close">×</div>
+    </div>
+    <div class="pop-up-window-content">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-3 control-label">疾病名称：</label>
+                <div class="col-md-9"><input type="text" class="form-control"></div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">相关描述：</label>
+                <div class="col-md-9"><textarea class="form-control" rows="3"></textarea></div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">确诊时间：</label>
+                <div class="col-md-6">
+                    <div class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input class="form-control" size="16" type="text" value="" id="datetimepicker" readonly="">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-window-footer">
+        <a class="btn btn-info">保存</a>
+        <!--<a class="btn btn-default">取消</a>-->
+    </div>
+</div>
+<!--弹出框结束-->
 <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/less.js" type="text/javascript"></script>
+<script src="js/bootstrap-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
 </body>
 </html>

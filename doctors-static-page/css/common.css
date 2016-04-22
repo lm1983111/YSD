@@ -10,6 +10,9 @@ width: 50px;
 .w80{
 width: 80px;
 }
+.w100{
+    width: 100px;
+}
 .w120{
 width: 120px;
 }
@@ -57,11 +60,11 @@ width: 150px;
     padding-left: 15px;
     padding-right: 15px;
 }
-
-.grid-plr30{
+.grid-plrb15{
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
 .mr5{
     margin-right: 5px;
@@ -99,6 +102,9 @@ width: 150px;
 .mt10{
     margin-top: 10px;
 }
+.mt15{
+    margin-top: 15px !important;
+}
 .mt50{
     margin-top: 50px;
 }
@@ -123,6 +129,7 @@ width: 150px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .bgfff{
     background-color: #fff;
 }
@@ -158,6 +165,10 @@ a{
 }
 .fs18-c40{
     font-size: 18px;
+    color: #404040;
+}
+.fs27-c40{
+    font-size: 27px;
     color: #404040;
 }
 .red{
@@ -233,6 +244,23 @@ p{
 tfoot{
     background-color: #f1f1f1;
 }
+
+/*.table-ellipsis{
+    table-layout: fixed;
+}
+.table-ellipsis td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}*/
+
+.text-ellipsis{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 /*table结束*/
 
 /*panination*/
@@ -414,22 +442,89 @@ tfoot{
     max-width: 148px;
     max-height: 148px;
 }
-.thumb-inline > [class^='thumb']{
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
 
 /* 相册结束  */
+
+/*弹出框*/
+.pop-up-window{
+    position: absolute;
+    z-index: 1000;
+    top: 10%;
+    left: 50%;
+    display: none;
+    width: 600px;
+    margin-left: -300px;
+    background-color: #fff;
+    color: #333;
+    box-shadow:0 0 10px rgba(0, 0, 0, .3);
+}
+.pop-up-window-header{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+}
+.pop-up-window-header:after{
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #ddd;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+}
+.pop-up-window-title{
+    position: relative;
+    left: 30px;
+    display: inline-block;
+}
+.pop-up-window-close{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 700;
+    cursor: pointer;
+}
+.pop-up-window-close:hover{
+    color: #1badc4;
+}
+.pop-up-window-content{
+    display: block;
+    padding:20px 30px;
+    background-color: #fff;
+}
+.pop-up-window-footer{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.pop-up-window-footer .btn{
+    margin-right: 20px;
+}
+.pop-up-window-footer .btn:last-child{
+    margin-right: 0;
+}
+.pop-top-red-note{
+    height: 30px;
+    color: red;
+}
+
+/*弹出框结束*/
 
 /*字体图标*/
 @font-face {
     font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?vk5r1n');
-    src:    url('../fonts/icomoon.eot?vk5r1n#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?vk5r1n') format('truetype'),
-    url('../fonts/icomoon.woff?vk5r1n') format('woff'),
-    url('../fonts/icomoon.svg?vk5r1n#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?88pxhd');
+    src:    url('../fonts/icomoon.eot?88pxhd#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?88pxhd') format('truetype'),
+    url('../fonts/icomoon.woff?88pxhd') format('woff'),
+    url('../fonts/icomoon.svg?88pxhd#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -449,68 +544,89 @@ tfoot{
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon_arrow_right:before {
+    content: "\e900";
+}
 .icon-icon_clock:before {
-    content: "\e90f";
+    content: "\e901";
+}
+.icon-icon_dialog:before {
+    content: "\e902";
 }
 .icon-icon_doctor:before {
-    content: "\e910";
+    content: "\e903";
 }
 .icon-icon_edit_pen:before {
-    content: "\e911";
+    content: "\e904";
+}
+.icon-icon_exit:before {
+    content: "\e905";
+}
+.icon-icon_flag:before {
+    content: "\e906";
+}
+.icon-icon_four_square:before {
+    content: "\e907";
 }
 .icon-icon_four_square_cricle:before {
-    content: "\e912";
+    content: "\e908";
+}
+.icon-icon_home:before {
+    content: "\e909";
+}
+.icon-icon_horn:before {
+    content: "\e90a";
+}
+.icon-icon_incoming:before {
+    content: "\e90b";
+}
+.icon-icon_light:before {
+    content: "\e90c";
+}
+.icon-icon_mail_box:before {
+    content: "\e90d";
+}
+.icon-icon_medcial_record:before {
+    content: "\e90e";
+}
+.icon-icon_medical:before {
+    content: "\e90f";
+}
+.icon-icon_note:before {
+    content: "\e910";
 }
 .icon-icon_outcoming:before {
+    content: "\e911";
+}
+.icon-icon_patient:before {
+    content: "\e912";
+}
+.icon-icon_phone:before {
     content: "\e913";
 }
 .icon-icon_phone_wifi:before {
     content: "\e914";
 }
-.icon-icon_arrow_right:before {
-    content: "\e900";
+.icon-icon_prescription:before {
+    content: "\e915";
 }
-.icon-icon_dialog:before {
-    content: "\e901";
-}
-.icon-icon_exit:before {
-    content: "\e902";
-}
-.icon-icon_flag:before {
-    content: "\e903";
-}
-.icon-icon_four_square:before {
-    content: "\e904";
-}
-.icon-icon_home:before {
-    content: "\e905";
-}
-.icon-icon_horn:before {
-    content: "\e906";
-}
-.icon-icon_incoming:before {
-    content: "\e907";
-}
-.icon-icon_mail_box:before {
-    content: "\e908";
-}
-.icon-icon_medcial_record:before {
-    content: "\e909";
-}
-.icon-icon_phone:before {
-    content: "\e90a";
+.icon-icon_sport:before {
+    content: "\e916";
 }
 .icon-icon_study_info:before {
-    content: "\e90b";
+    content: "\e917";
 }
 .icon-icon_suggestion:before {
-    content: "\e90c";
+    content: "\e918";
 }
 .icon-icon_telephone:before {
-    content: "\e90d";
+    content: "\e919";
+}
+.icon-icon_treatment:before {
+    content: "\e91a";
 }
 .icon-icon_triangle:before {
-    content: "\e90e";
+    content: "\e91b";
 }
 /*字体图标结束*/
 
@@ -522,9 +638,11 @@ tfoot{
 .view-topbar {
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 60px;
     z-index: 101;
+    /*background-color: rgba(255,255,255,1);*/
     background-color: #fff;
+    box-shadow: 0px 2px 5px 0.3px rgba(198, 198, 198, 0.3);
 }
 .view-topbar a{
     text-decoration: none;
@@ -534,7 +652,7 @@ tfoot{
     display: block;
     float: left;
     width: 300px;
-    height: 80px;
+    height: 60px;
     margin-left: 30px;
     background-image: url("../img/logo_index.png");
     background-position: center;
@@ -564,8 +682,8 @@ tfoot{
 .topbar-right-item .topbar-btn{
     position: relative;
     display: block;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     padding: 0 10px;
     color: #333;
     font-size: 14px;
@@ -578,17 +696,10 @@ tfoot{
 .topbar-right-item .topbar-btn:hover{
     background-color: #f9f9f9;
 }
-/*.topbar-btn-portrait .thumb50-table{
-    float: left;
-    line-height: normal;
-    margin-top: 15px;
-    margin-right: 10px;
-    border-radius: 100%;
-    overflow: hidden;
-}*/
+
 .topbar-btn-portrait-img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 100%;
     border:1px solid #ddd;
 }
@@ -599,7 +710,7 @@ tfoot{
 
 .view-body{
     position: absolute;
-    top: 80px;
+    top: 60px;
     bottom: 0;
     width: 100%;
     background-color: #000;
@@ -610,13 +721,13 @@ tfoot{
 .view-sidebar{
     position: fixed;
     z-index: 102;
-    top: 80px;
+    top: 60px;
     bottom: 0;
     display: block;
     width: 180px;
     padding-top: 40px;
     overflow-x: hidden;
-    background-color: #888;
+    background-color: #4883c6;
     background: -webkit-linear-gradient(#4883c6,#23bec2);
     background: linear-gradient(#4883c6,#23bec2);
 }
@@ -689,7 +800,7 @@ tfoot{
     margin-top: -9px;
     right: -6px;
     display: block;
-    content: "\e90e";
+    content: "\e91b";
     color: #f7f7f7;
     font-family: 'icomoon' !important;
     font-size: 18px;
@@ -714,7 +825,6 @@ tfoot{
     right: 0;
     overflow: hidden;
     background-color: #f7f7f7;
-    box-shadow: inset 0px 2px 8.28px 0.72px rgba(198, 198, 198, 0.35);
 }
 .view-main-container{
     position: absolute;
@@ -958,6 +1068,10 @@ tfoot{
         border-bottom: 2px solid #D1D1D1;
     }
 }
+.step-mark-line .col-sm-2:before, .step-mark-line .col-sm-4:before{
+    width: 60%;
+    left: -30%;
+}
 .step-mark-line .col-sm-2, .step-mark-line .col-sm-4{
     position: relative;
 }
@@ -986,8 +1100,10 @@ tfoot{
 }
 .breadcrumb{
     font-size: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     background-color: transparent;
 }
 .has-seal-nav .nav-tabs li [class^="icon-"]{
@@ -1057,6 +1173,7 @@ tfoot{
 .cap-inquiry-record-table tr td{
     position: relative;
     padding-left: 32px !important;
+    cursor: default;
 }
 .cap-inquiry-record-table tr td [class^="icon-"]{
     position: absolute;
@@ -1066,8 +1183,26 @@ tfoot{
     color: #cecece;
     font-size: 16px;
 }
-
-
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+    background-color: #fff;
+}
+.basic-info-form-wrap .input-group-addon, .pop-up-window .input-group-addon{
+    border-left: 0;
+}
+.tool-bar{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.tool-bar .btn{
+    margin-right: 20px;
+}
+.tool-bar .btn:last-child{
+    margin-right: 0;
+}
 /*接听结束*/
 /*详情*/
 .ui2-tab-content{
@@ -1139,8 +1274,7 @@ tfoot{
     transition: all ease-in-out .15s;
 }
 .adaptive-box:hover{
-    border-color: #1badc4;
-    box-shadow: 0px 2px 8.28px 0.72px rgba(198, 198, 198, 0.35);
+    box-shadow: 0px 2px 8.28px 0.72px rgba(198, 198, 198, 0.45);
 }
 @media screen and (min-width: 1840px) { /* Columns increased to 4 */
     .adaptive-con-wrap {
@@ -1198,7 +1332,7 @@ tfoot{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.zhusu{
+.ellipsis-ptl{
     color: #888;
 }
 .ad-con-name{
@@ -1211,4 +1345,156 @@ tfoot{
     text-decoration: underline;
 }
 /*医生问诊列表结束*/
+/*问诊血压记录*/
+.have-min-w990{
+    min-width: 990px;
+}
+
+.dtphp-list-wrap{
+
+}
+.dtphp-list-box{
+    position: relative;
+    display: block;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #ddd;
+    height: 50px;
+    width: 670px;
+    line-height: 50px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.dtphp-list-box:after, .dtphp-list-box:before{
+    display: table;
+    content: '';
+}
+.dtphp-list-box:after{
+    clear: both;
+}
+.dtphp-list-box .icon-icon_clock{
+    color: #ccc;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+.dtphp-list-box .item-status, .dtphp-list-box .item-pressure-num, .dtphp-list-box .item-heart-num, .dtphp-list-box .item-test-time{
+    display: block;
+    float: left;
+    text-align: center;
+}
+.dtphp-list-box .item-status{
+    width: 100px;
+    border-right: 1px dashed #ddd;
+}
+.dtphp-list-box .item-pressure-num{
+    width: 230px;
+}
+.dtphp-list-box .item-heart-num{
+    width: 120px;
+}
+.dtphp-list-box .item-test-time{
+    width: 220px;
+}
+.dtphp-list-box .item-status .item-status-text{
+    font-size: 20px;
+}
+.item-status-text:after{
+    content: "";
+    display: inline-block;
+    position: relative;
+    right: -30px;
+    top: 2px;
+    z-index: 100;
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.phone-blue .item-status-text:after{
+    background-image: url(../img/icon_phone_blue.png);
+}
+.phone-yellow .item-status-text:after{
+    background-image: url(../img/icon_phone_yellow.png);
+}
+.phone-green .item-status-text:after{
+    background-image: url(../img/icon_phone_green.png);
+}
+.phone-red-small .item-status-text:after{
+    background-image: url(../img/icon_phone_red_small.png);
+}
+.phone-red-middle .item-status-text:after{
+    background-image: url(../img/icon_phone_red_middle.png);
+}
+.phone-red-big .item-status-text:after{
+    background-image: url(../img/icon_phone_red_big.png);
+}
+
+.pen-blue .item-status-text:after{
+    background-image: url(../img/icon_pen_blue.png);
+}
+.pen-yellow .item-status-text:after{
+    background-image: url(../img/icon_pen_yellow.png);
+}
+.pen-red-small .item-status-text:after{
+    background-image: url(../img/icon_pen_red_small.png);
+}
+.pen-green .item-status-text:after{
+    background-image: url(../img/icon_pen_green.png);
+}
+.pen-red-middle .item-status-text:after{
+    background-image: url(../img/icon_pen_red_middle.png);
+}
+.pen-red-big .item-status-text:after{
+    background-image: url(../img/icon_pen_red_big.png);
+}
+
+.pen-blue .item-status-text, .phone-blue .item-status-text{
+    color: #46dbd2;
+}
+.pen-yellow .item-status-text, .phone-yellow .item-status-text{
+    color: #febb52;
+}
+.pen-red-small .item-status-text, .phone-red-small .item-status-text{
+    color: #f98383;
+}
+.pen-green .item-status-text, .phone-green .item-status-text{
+    color: #92e21b;
+}
+.pen-red-middle .item-status-text, .phone-red-middle .item-status-text{
+    color: #f66868;
+}
+.pen-red-big .item-status-text, .phone-red-big .item-status-text{
+    color: #ee5147;
+}
+/*问诊血压记录结束*/
+/*问诊历史*/
+.left-line-right{
+    position: relative;
+    text-align: center;
+}
+.left-line-right:after{
+    position: absolute;
+    z-index: 1;
+    content: '';
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid #ddd;
+}
+.left-line-right-title{
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #666;
+    background-color: #fff;
+}
+/*问诊历史结束*/
 /*--------------------------------------------------右侧主体结束*--------------------------------------------------/
