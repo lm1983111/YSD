@@ -94,7 +94,7 @@ function tlsGetUserSig(res) {
 //初始化demo
 function initDemoApp() {
 	console.info(loginInfo.identifier);
-    $("body").css("background-color", '#2f2f2f');
+    //$("body").css("background-color", '#2f2f2f');
     $('#qavSdkDemoDiv').show();
     $('#userId').html(loginInfo.identifier);
 }

@@ -26,12 +26,6 @@ var inputRoomId = null;
 var curentRoomId = null;
 //是否点击【返回登录】按钮标记
 var isQuitFlag = false;
-//获取房间号
-(function getRoomId(){
-    var thisRoomId = "10";
-    $("#room_id").val(thisRoomId)
-    })();
-
 //主视频用户信息
 var isMainUsable = true; //是否可用
 var mainUserId = null; //当前用户ID
@@ -234,3 +228,8 @@ if (TLSHelper.getQuery('tmpsig')) {
     }
     }
 
+//获取房间号
+(function getRoomId(){
+    var thisRoomId = "10";
+    $("#room_id").val(thisRoomId)
+})();

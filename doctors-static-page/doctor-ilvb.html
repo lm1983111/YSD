@@ -23,7 +23,6 @@
     <!--房间ID-->
     <input id="room_id" value="" type="hidden">
     <!--<button type="button" class="btn btn-primary" onclick="enterRoom()">加入房间</button>-->
-
     <!--选择成员观看成员视频-->
     <form class="form-horizontal" role="form">
         <select class="form-control" id="room_members_list">
@@ -50,20 +49,18 @@
             <div class="doctor-video">
                 <div class="doctor-video-header">与李雷（18625874569）视频问诊中</div>
                 <div class="doctor-video-body">
-                    <!--<div class="video-loading-img-box">
+                    <div class="video-loading-img-box">
                         <img class="video-loading-img" src="ilvb/images/loading-b.gif">
                         <div class="video-loading-text">正在连接中...</div>
-                    </div>-->
-                    <div class="main-windows" id="mainView" style="height: 400px;width: 400px"></div>
+                    </div>
+                    <div class="main-windows" id="mainView"></div>
 
-                    <div class="middle-right-bottom">
+                    <!--事件通知-->
+                    <div class="middle-right-bottom ilvb-note-wrap">
                         <form class="form-horizontal" role="form">
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">事件通知:</label>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label"></label>
-                                <div class="col-sm-9">
+                                <label class="col-sm-4 control-label">事件通知：</label>
+                                <div class="col-sm-8">
                                     <select multiple class="form-control" id="notice_list">
                                     </select>
                                 </div>
@@ -117,7 +114,7 @@
 <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/less.js" type="text/javascript"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-<script src="ilvb/js/livbJs.js" type="text/javascript" charset="utf-8"></script>
+<script src="ilvb/js/livbUi.js" type="text/javascript" charset="utf-8"></script>
 
 <!--引入腾讯登陆服务TLS web sdk-->
 <script type="text/javascript" src="https://tls.qcloud.com/libs/api.min.js"></script>

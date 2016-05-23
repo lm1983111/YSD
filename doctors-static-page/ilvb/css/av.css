@@ -1,11 +1,20 @@
 body{
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #eee;
 }
 .new-window-wrap{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: block;
-    min-width: 900px;
-    min-height: 700px;
-    border: 1px solid #ddd;
+    min-width: 860px;
+    min-height: 560px;
+    /*border: 1px solid #ddd;*/
     background-color: #eee;
 }
 .new-win-con{
@@ -31,29 +40,29 @@ body{
     line-height: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    border-width: 0 1px 1px 0;
+    /*border-width: 0 1px 1px 0;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
     background-color: bisque;
 }
 .doctor-video-footer{
     position: relative;
     display: block;
-    height: 78px;
-    line-height: 78px;
+    height: 50px;
+    line-height: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    border-width: 1px 1px 0 0;
+    /*border-width: 1px 1px 0 0;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
     background-color: bisque;
 }
 .doctor-video-body{
     position: relative;
     display: block;
-    background-color: #000;
-    border-right: 1px solid green;
-    height: 570px;
+    background-color: #242527;
+    /*border-right: 1px solid green;*/
+    height: 460px;
 }
 .call-off-btn{
     position: absolute;
@@ -67,9 +76,9 @@ body{
     line-height: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    border-width: 0 0 1px 0;
+    /*border-width: 0 0 1px 0;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
     background-color: bisque;
 }
 .dv-user-info-body{
@@ -129,5 +138,16 @@ body{
     overflow: hidden;
 }
 .display-none{
-
+    display: none;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+.ilvb-note-wrap{
+    position: absolute;
+    z-index: 8000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }

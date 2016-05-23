@@ -23,11 +23,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="doctor-ilvb.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="doctor-ilvb-list.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-ilvb-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7549824" vertical-offset="3270" max-vertical-offset="4123">
+              <caret line="206" column="147" selection-start-line="206" selection-start-column="147" selection-end-line="206" selection-end-column="147" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doctor-ilvb.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-ilvb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42512077" vertical-offset="180" max-vertical-offset="2660">
-              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+            <state vertical-scroll-proportion="-20.964285" vertical-offset="1750" max-vertical-offset="2603">
+              <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="av.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/css/av.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.64" vertical-offset="0" max-vertical-offset="3002">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -36,8 +56,8 @@
       <file leaf-file-name="init-ilvb.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/init-ilvb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1437" max-vertical-offset="4598">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4039" max-vertical-offset="4560">
+              <caret line="226" column="19" selection-start-line="226" selection-start-column="19" selection-end-line="226" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -46,14 +66,13 @@
       <file leaf-file-name="webav_demo_base.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="1311">
-              <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1406">
+              <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
               <folding>
                 <element signature="n#!!block;n#changeAppType#0" expanded="false" />
                 <element signature="n#!!block;n#selectApp#0" expanded="false" />
                 <element signature="n#!!block;n#tlsLogin#0" expanded="false" />
                 <element signature="n#!!block;n#tlsGetUserSig#0" expanded="false" />
-                <element signature="n#!!block;n#initDemoApp#0" expanded="false" />
                 <element signature="n#!!block;n#qavSdkLogin#0" expanded="false" />
                 <element signature="n#!!block;n#startContext#0" expanded="false" />
                 <element signature="n#!!block;n#stopContext#0" expanded="false" />
@@ -67,68 +86,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webav_demo_room.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_room.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6517">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-              <folding>
-                <element signature="n#!!block;n#updateMemberVideoStatus#0" expanded="false" />
-                <element signature="n#!!block;n#enterRoom#0" expanded="false" />
-                <element signature="n#!!block;n#exitRoom#0" expanded="false" />
-                <element signature="n#!!block;n#setMemberVolumn#0" expanded="false" />
-                <element signature="n#!!block;n#setMemberViewVolumn#0" expanded="false" />
-                <element signature="n#!!block;n#setOtherToMainView#0" expanded="false" />
-                <element signature="n#!!block;n#cancelViewClick#0" expanded="false" />
-                <element signature="n#!!block;n#relocationView#0" expanded="false" />
-                <element signature="n#!!block;n#setVideoViewById#0" expanded="false" />
-                <element signature="n#!!block;n#getDocTop#0" expanded="false" />
-                <element signature="n#!!block;n#getDocLeft#0" expanded="false" />
-                <element signature="n#!!block;n#getViewDivPosX#0" expanded="false" />
-                <element signature="n#!!block;n#getViewDivPosY#0" expanded="false" />
-                <element signature="n#!!block;n#getCurOpenViewUserIds#0" expanded="false" />
-                <element signature="n#!!block;n#setMemberViewAngle#0" expanded="false" />
-                <element signature="n#!!block;n#cutMemberViewPic#0" expanded="false" />
-                <element signature="n#!!block;n#fullScreenMemberView#0" expanded="false" />
-                <element signature="n#!!block;n#resetFullScreenMemberView#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="webav_demo_event.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_event.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1643" max-vertical-offset="4199">
-              <caret line="101" column="56" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="4199">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webav_demo_dev.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_dev.js">
+      <file leaf-file-name="livbUi.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/livbUi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4579">
-              <caret line="272" column="25" selection-start-line="272" selection-start-column="25" selection-end-line="272" selection-end-column="25" />
-              <folding>
-                <element signature="n#!!block;n#GetSelectedCameraId#0" expanded="false" />
-                <element signature="n#!!block;n#setSelectedCameraIndex#0" expanded="false" />
-                <element signature="n#!!block;n#openCamera#0" expanded="false" />
-                <element signature="n#!!block;n#closeCamera#0" expanded="false" />
-                <element signature="n#!!block;n#changeCameraStatus#0" expanded="false" />
-                <element signature="n#!!block;n#resetCameraList#0" expanded="false" />
-                <element signature="n#!!block;n#cameraListOnChange#0" expanded="false" />
-                <element signature="n#!!block;n#setCamaraCheckedStatus#0" expanded="false" />
-                <element signature="n#!!block;n#getSelectedMicId#0" expanded="false" />
-                <element signature="n#!!block;n#setSelectedMicIndex#0" expanded="false" />
-                <element signature="n#!!block;n#openMic#0" expanded="false" />
-                <element signature="n#!!block;n#closeMic#0" expanded="false" />
-                <element signature="n#!!block;n#changeMicStatus#0" expanded="false" />
-                <element signature="n#!!block;n#resetMicList#0" expanded="false" />
-                <element signature="n#!!block;n#getMicVolumn#0" expanded="false" />
-                <element signature="n#!!block;n#setMicVolumn#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,9 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/doctors-static-page/js/tab.js" />
-        <option value="$PROJECT_DIR$/doctors-static-page/css/tab.css" />
-        <option value="$PROJECT_DIR$/doctors-static-page/css/show-big-image.css" />
         <option value="$PROJECT_DIR$/doctors-static-page/css/compatible.css" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-basic-info.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-family-record.html" />
@@ -187,13 +157,16 @@
         <option value="$PROJECT_DIR$/doctors-static-page/competence-new-employee.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/js/livbJs.js" />
         <option value="$PROJECT_DIR$/doctors-static-page/css/ilvb.css" />
-        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/css/av.css" />
         <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/livbJs.js" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-ilvb-video-window.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/init-ilvb.js" />
         <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_room.js" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-ilvb.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_event.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/init-ilvb.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-ilvb.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/livbUi.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_base.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/css/av.css" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-ilvb-list.html" />
       </list>
     </option>
   </component>
@@ -229,6 +202,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,9 +235,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YSD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YSD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctors-static-page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ilvb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YSD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YSD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctors-static-page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ilvb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YSD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YSD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctors-static-page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ilvb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,14 +321,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -304,14 +331,12 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -319,6 +344,16 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -342,13 +377,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3900325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24918744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19441517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -360,8 +395,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -378,9 +413,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3540315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -630,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/css/av.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04884005" vertical-offset="1708" max-vertical-offset="2527">
-          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/css/ion.rangeSlider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2888">
@@ -672,14 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/livbJs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25518927" vertical-offset="0" max-vertical-offset="819">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-basic-info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22393823" vertical-offset="7978" max-vertical-offset="8835">
@@ -696,14 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-ilvb-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20046893" vertical-offset="0" max-vertical-offset="4123">
-          <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/images/nav_ctrl_btna.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -713,68 +725,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="989" max-vertical-offset="16682">
           <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/init-ilvb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4598">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="1311">
-          <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!block;n#changeAppType#0" expanded="false" />
-            <element signature="n#!!block;n#selectApp#0" expanded="false" />
-            <element signature="n#!!block;n#tlsLogin#0" expanded="false" />
-            <element signature="n#!!block;n#tlsGetUserSig#0" expanded="false" />
-            <element signature="n#!!block;n#initDemoApp#0" expanded="false" />
-            <element signature="n#!!block;n#qavSdkLogin#0" expanded="false" />
-            <element signature="n#!!block;n#startContext#0" expanded="false" />
-            <element signature="n#!!block;n#stopContext#0" expanded="false" />
-            <element signature="n#!!block;n#validNumber#0" expanded="false" />
-            <element signature="n#!!block;n#setCookie#0" expanded="false" />
-            <element signature="n#!!block;n#getCookie#0" expanded="false" />
-            <element signature="n#!!block;n#delCookie#0" expanded="false" />
-            <element signature="n#!!block;n#detectOS#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4579">
+        <state vertical-scroll-proportion="3.0816555" vertical-offset="0" max-vertical-offset="4579">
           <caret line="272" column="25" selection-start-line="272" selection-start-column="25" selection-end-line="272" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#GetSelectedCameraId#0" expanded="false" />
-            <element signature="n#!!block;n#setSelectedCameraIndex#0" expanded="false" />
-            <element signature="n#!!block;n#openCamera#0" expanded="false" />
-            <element signature="n#!!block;n#closeCamera#0" expanded="false" />
-            <element signature="n#!!block;n#changeCameraStatus#0" expanded="false" />
-            <element signature="n#!!block;n#resetCameraList#0" expanded="false" />
-            <element signature="n#!!block;n#cameraListOnChange#0" expanded="false" />
-            <element signature="n#!!block;n#setCamaraCheckedStatus#0" expanded="false" />
-            <element signature="n#!!block;n#getSelectedMicId#0" expanded="false" />
-            <element signature="n#!!block;n#setSelectedMicIndex#0" expanded="false" />
-            <element signature="n#!!block;n#openMic#0" expanded="false" />
-            <element signature="n#!!block;n#closeMic#0" expanded="false" />
-            <element signature="n#!!block;n#changeMicStatus#0" expanded="false" />
-            <element signature="n#!!block;n#resetMicList#0" expanded="false" />
-            <element signature="n#!!block;n#getMicVolumn#0" expanded="false" />
-            <element signature="n#!!block;n#setMicVolumn#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_room.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6517">
+        <state vertical-scroll-proportion="0.10626398" vertical-offset="0" max-vertical-offset="6517">
           <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
           <folding>
             <element signature="n#!!block;n#updateMemberVideoStatus#0" expanded="false" />
@@ -799,18 +762,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/livbUi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="894">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_event.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1643" max-vertical-offset="4199">
-          <caret line="101" column="56" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="4199">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/init-ilvb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4039" max-vertical-offset="4560">
+          <caret line="226" column="19" selection-start-line="226" selection-start-column="19" selection-end-line="226" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1406">
+          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!block;n#changeAppType#0" expanded="false" />
+            <element signature="n#!!block;n#selectApp#0" expanded="false" />
+            <element signature="n#!!block;n#tlsLogin#0" expanded="false" />
+            <element signature="n#!!block;n#tlsGetUserSig#0" expanded="false" />
+            <element signature="n#!!block;n#qavSdkLogin#0" expanded="false" />
+            <element signature="n#!!block;n#startContext#0" expanded="false" />
+            <element signature="n#!!block;n#stopContext#0" expanded="false" />
+            <element signature="n#!!block;n#validNumber#0" expanded="false" />
+            <element signature="n#!!block;n#setCookie#0" expanded="false" />
+            <element signature="n#!!block;n#getCookie#0" expanded="false" />
+            <element signature="n#!!block;n#delCookie#0" expanded="false" />
+            <element signature="n#!!block;n#detectOS#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-ilvb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42512077" vertical-offset="180" max-vertical-offset="2660">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        <state vertical-scroll-proportion="-20.964285" vertical-offset="1750" max-vertical-offset="2603">
+          <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/css/av.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.64" vertical-offset="0" max-vertical-offset="3002">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-ilvb-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7549824" vertical-offset="3270" max-vertical-offset="4123">
+          <caret line="206" column="147" selection-start-line="206" selection-start-column="147" selection-end-line="206" selection-end-column="147" />
           <folding />
         </state>
       </provider>
