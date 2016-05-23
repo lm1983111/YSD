@@ -22,7 +22,118 @@
     <favorites_list name="YSD" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="doctor-ilvb.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-ilvb.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42512077" vertical-offset="180" max-vertical-offset="2660">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init-ilvb.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/init-ilvb.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1437" max-vertical-offset="4598">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webav_demo_base.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="1311">
+              <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!block;n#changeAppType#0" expanded="false" />
+                <element signature="n#!!block;n#selectApp#0" expanded="false" />
+                <element signature="n#!!block;n#tlsLogin#0" expanded="false" />
+                <element signature="n#!!block;n#tlsGetUserSig#0" expanded="false" />
+                <element signature="n#!!block;n#initDemoApp#0" expanded="false" />
+                <element signature="n#!!block;n#qavSdkLogin#0" expanded="false" />
+                <element signature="n#!!block;n#startContext#0" expanded="false" />
+                <element signature="n#!!block;n#stopContext#0" expanded="false" />
+                <element signature="n#!!block;n#validNumber#0" expanded="false" />
+                <element signature="n#!!block;n#setCookie#0" expanded="false" />
+                <element signature="n#!!block;n#getCookie#0" expanded="false" />
+                <element signature="n#!!block;n#delCookie#0" expanded="false" />
+                <element signature="n#!!block;n#detectOS#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webav_demo_room.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_room.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6517">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="n#!!block;n#updateMemberVideoStatus#0" expanded="false" />
+                <element signature="n#!!block;n#enterRoom#0" expanded="false" />
+                <element signature="n#!!block;n#exitRoom#0" expanded="false" />
+                <element signature="n#!!block;n#setMemberVolumn#0" expanded="false" />
+                <element signature="n#!!block;n#setMemberViewVolumn#0" expanded="false" />
+                <element signature="n#!!block;n#setOtherToMainView#0" expanded="false" />
+                <element signature="n#!!block;n#cancelViewClick#0" expanded="false" />
+                <element signature="n#!!block;n#relocationView#0" expanded="false" />
+                <element signature="n#!!block;n#setVideoViewById#0" expanded="false" />
+                <element signature="n#!!block;n#getDocTop#0" expanded="false" />
+                <element signature="n#!!block;n#getDocLeft#0" expanded="false" />
+                <element signature="n#!!block;n#getViewDivPosX#0" expanded="false" />
+                <element signature="n#!!block;n#getViewDivPosY#0" expanded="false" />
+                <element signature="n#!!block;n#getCurOpenViewUserIds#0" expanded="false" />
+                <element signature="n#!!block;n#setMemberViewAngle#0" expanded="false" />
+                <element signature="n#!!block;n#cutMemberViewPic#0" expanded="false" />
+                <element signature="n#!!block;n#fullScreenMemberView#0" expanded="false" />
+                <element signature="n#!!block;n#resetFullScreenMemberView#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webav_demo_event.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_event.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1643" max-vertical-offset="4199">
+              <caret line="101" column="56" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webav_demo_dev.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_dev.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4579">
+              <caret line="272" column="25" selection-start-line="272" selection-start-column="25" selection-end-line="272" selection-end-column="25" />
+              <folding>
+                <element signature="n#!!block;n#GetSelectedCameraId#0" expanded="false" />
+                <element signature="n#!!block;n#setSelectedCameraIndex#0" expanded="false" />
+                <element signature="n#!!block;n#openCamera#0" expanded="false" />
+                <element signature="n#!!block;n#closeCamera#0" expanded="false" />
+                <element signature="n#!!block;n#changeCameraStatus#0" expanded="false" />
+                <element signature="n#!!block;n#resetCameraList#0" expanded="false" />
+                <element signature="n#!!block;n#cameraListOnChange#0" expanded="false" />
+                <element signature="n#!!block;n#setCamaraCheckedStatus#0" expanded="false" />
+                <element signature="n#!!block;n#getSelectedMicId#0" expanded="false" />
+                <element signature="n#!!block;n#setSelectedMicIndex#0" expanded="false" />
+                <element signature="n#!!block;n#openMic#0" expanded="false" />
+                <element signature="n#!!block;n#closeMic#0" expanded="false" />
+                <element signature="n#!!block;n#changeMicStatus#0" expanded="false" />
+                <element signature="n#!!block;n#resetMicList#0" expanded="false" />
+                <element signature="n#!!block;n#getMicVolumn#0" expanded="false" />
+                <element signature="n#!!block;n#setMicVolumn#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -32,33 +143,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/doctors-static-page/customer-knowledge-repository.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/customer-view-records.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/customer-message.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/customer-dial.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/css/bootstrap-datetimepicker.css" />
-        <option value="$PROJECT_DIR$/doctors-static-page/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/doctors-static-page/customer-medical-records-list.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/customer-medical-records.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-patient-list.html" />
-        <option value="$PROJECT_DIR$/doctor-patient-record.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-patient-record.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-history-pressure-chart.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-course record.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-medical-record.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/medical-file-detail.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-visit-history-list.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-visit-detail.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/css/styles.less" />
         <option value="$PROJECT_DIR$/doctors-static-page/js/tab.js" />
         <option value="$PROJECT_DIR$/doctors-static-page/css/tab.css" />
         <option value="$PROJECT_DIR$/doctors-static-page/css/show-big-image.css" />
-        <option value="$PROJECT_DIR$/doctors-static-page/js/common.js" />
-        <option value="$PROJECT_DIR$/doctors-static-page/css/common.css" />
         <option value="$PROJECT_DIR$/doctors-static-page/css/compatible.css" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-basic-info.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-family-record.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-histroy-record.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-now-record.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-personal-record.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-push.html" />
@@ -67,22 +157,43 @@
         <option value="$PROJECT_DIR$/doctors-static-page/customer-index.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-suggestions.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/customer-suggestions-list.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-patient-treatment.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-patient-treatment-list.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-basic-info.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-course-record.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-diagnosis-prescription.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-family-record.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-history-record.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-now-record.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-personal-record.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-pressure-history.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-test-report.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-visit-record.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/doctor-visit-record-list.html" />
-        <option value="$PROJECT_DIR$/doctors-static-page/medical-file.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/medical-file-list.html" />
         <option value="$PROJECT_DIR$/doctors-static-page/model.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-diagnosis-prescription.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-patient-treatment.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/medical-file.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-test-report.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-treatment-pressure-history.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-patient-treatment-list.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/im/js/uiModule.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/competence-new-role.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/customer-answer-histroy-record.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/js/common.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/competence-role-management.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/competence-modify-employee.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/competence-menu-management.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/competence-function-link.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/competence-employee-management.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/css/common.css" />
+        <option value="$PROJECT_DIR$/doctors-static-page/auto-response.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/competence-new-employee.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/js/livbJs.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/css/ilvb.css" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/css/av.css" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/livbJs.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-ilvb-video-window.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/init-ilvb.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_room.js" />
+        <option value="$PROJECT_DIR$/doctors-static-page/doctor-ilvb.html" />
+        <option value="$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_event.js" />
       </list>
     </option>
   </component>
@@ -150,24 +261,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YSD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YSD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doctors-static-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -178,20 +271,29 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/livb2016520" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\web\项目管理\医生端\静态页\YSD\doctors-static-page\js" />
-      <recent name="E:\web\项目管理\医生端\静态页\YSD\doctors-static-page\css" />
-      <recent name="E:\web\项目管理\医生端\静态页\YSD\doctors-static-page" />
-      <recent name="E:\wlg-work\QS-work\YSD\doctors-static-page\fonts" />
+      <recent name="E:\web\项目管理\医生端\静态页\YSD\doctors-static-page\ilvb\images" />
+      <recent name="E:\web\项目管理\医生端\静态页\YSD\doctors-static-page\ilvb" />
+      <recent name="E:\web\项目管理\医生端\静态页\YSD\doctors-static-page\ilvb\css" />
+      <recent name="E:\web\项目管理\医生端\静态页\YSD\doctors-static-page\ilvb\js" />
+      <recent name="E:\web\项目管理\医生端\静态页\YSD\doctors-static-page\img" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -202,12 +304,14 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
       <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -215,16 +319,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -248,14 +342,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3900325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20073763" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19441517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -264,10 +359,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42361864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -284,9 +378,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3540315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -309,396 +403,414 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="3173">
-          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-basic-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1387" max-vertical-offset="1843">
-          <caret line="73" column="54" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1975">
-          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/设计/医生端原型330/400客服.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/less.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="194807">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/bootstrap-datetimepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8056">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/bootstrap-datetimepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="35264">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/bootstrap-datetimepicker.zh-CN.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.8" vertical-offset="57635" max-vertical-offset="136876">
-          <caret line="3045" column="108" selection-start-line="3045" selection-start-column="99" selection-end-line="3045" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/styles.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.084821425" vertical-offset="0" max-vertical-offset="672">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/设计/icomoon/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28708792" vertical-offset="171" max-vertical-offset="7239">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/img/gallery1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/show-big-image.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63870245" vertical-offset="873" max-vertical-offset="2071">
-          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/tab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/tab.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1330">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/modernizr-2.8.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="881">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/show-big-image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08626561" vertical-offset="0" max-vertical-offset="881">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-554.04" vertical-offset="0" max-vertical-offset="28595">
-          <caret line="729" column="29" selection-start-line="729" selection-start-column="29" selection-end-line="729" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/html5shiv.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="881">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/compatible.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34004474" vertical-offset="0" max-vertical-offset="894">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-basic-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="8835">
-          <caret line="14" column="92" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-family-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="3990">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-histroy-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="5947">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-now-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="4218">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-personal-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="5358">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-push.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="5339">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-ask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="2698">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-call-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="4009">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-dial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="285">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="4047">
-          <caret line="14" column="92" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-knowledge-repository.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="285">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-message.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="285">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-suggestions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="2698">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-suggestions-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="3838">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-patient-treatment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="8265">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-patient-treatment-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="28" max-vertical-offset="6916">
-          <caret line="14" column="92" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-basic-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="9386">
-          <caret line="14" column="92" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-course-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="4161">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-diagnosis-prescription.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="4446">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-family-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="4541">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-history-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="5567">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-now-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="4769">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-personal-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="5909">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-test-report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="4427">
-          <caret line="15" column="92" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-visit-record-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28956625" vertical-offset="0" max-vertical-offset="3838">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/medical-file.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28956625" vertical-offset="0" max-vertical-offset="7296">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/medical-file-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2852194" vertical-offset="0" max-vertical-offset="3401">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/model.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8406466" vertical-offset="1001" max-vertical-offset="1881">
-          <caret line="91" column="75" selection-start-line="91" selection-start-column="75" selection-end-line="91" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-visit-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2672919" vertical-offset="0" max-vertical-offset="3135">
-          <caret line="12" column="92" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="7258">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-pressure-history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40093786" vertical-offset="266" max-vertical-offset="5795">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.4654162" vertical-offset="4904" max-vertical-offset="5757">
+          <caret line="279" column="28" selection-start-line="279" selection-start-column="28" selection-end-line="279" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-test-report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="4351">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/compatible.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31879196" vertical-offset="0" max-vertical-offset="894">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-basic-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72098476" vertical-offset="8049" max-vertical-offset="9386">
+          <caret line="456" column="47" selection-start-line="456" selection-start-column="47" selection-end-line="456" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-patient-treatment-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5768194" vertical-offset="1377" max-vertical-offset="3781">
+          <caret line="95" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-personal-record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5629139" vertical-offset="4002" max-vertical-offset="5909">
+          <caret line="233" column="63" selection-start-line="233" selection-start-column="63" selection-end-line="233" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/js/webim_demo_blacklist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2698">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/css/im.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2660">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-suggestions-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28956625" vertical-offset="0" max-vertical-offset="3838">
+          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-now-record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36324787" vertical-offset="3488" max-vertical-offset="4218">
+          <caret line="197" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="216" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-histroy-record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5099648" vertical-offset="4980" max-vertical-offset="5947">
+          <caret line="285" column="27" selection-start-line="285" selection-start-column="27" selection-end-line="285" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1976">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-family-record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44314185" vertical-offset="3137" max-vertical-offset="3990">
+          <caret line="185" column="44" selection-start-line="185" selection-start-column="44" selection-end-line="185" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-patient-treatment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23302108" vertical-offset="6945" max-vertical-offset="8227">
+          <caret line="376" column="48" selection-start-line="376" selection-start-column="48" selection-end-line="376" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/competence-function-link.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.428572" vertical-offset="1456" max-vertical-offset="4389">
+          <caret line="92" column="47" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/competence-role-management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40762123" vertical-offset="1395" max-vertical-offset="4484">
+          <caret line="92" column="47" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/competence-menu-management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69399536" vertical-offset="1147" max-vertical-offset="4066">
+          <caret line="92" column="47" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/auto-response.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21016166" vertical-offset="3390" max-vertical-offset="4294">
+          <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/competence-modify-employee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6581986" vertical-offset="3352" max-vertical-offset="5415">
+          <caret line="252" column="59" selection-start-line="252" selection-start-column="59" selection-end-line="252" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/competence-new-employee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5923787" vertical-offset="1148" max-vertical-offset="4921">
+          <caret line="133" column="83" selection-start-line="133" selection-start-column="83" selection-end-line="133" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-treatment-family-record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13333334" vertical-offset="3712" max-vertical-offset="4541">
+          <caret line="200" column="29" selection-start-line="200" selection-start-column="29" selection-end-line="200" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/competence-employee-management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34545454" vertical-offset="0" max-vertical-offset="4180">
+          <caret line="12" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="214" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/img/360截图20160414090713934.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/img/loading_50.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/sdk/webim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="75392">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/js/uiModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36241612" vertical-offset="512" max-vertical-offset="1406">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/js/webim_demo_group_notice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3496">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/js/definition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19677791" vertical-offset="0" max-vertical-offset="1330">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2014">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-im.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1997226" vertical-offset="5689" max-vertical-offset="6441">
+          <caret line="307" column="26" selection-start-line="307" selection-start-column="26" selection-end-line="307" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25459316" vertical-offset="965" max-vertical-offset="2204">
+          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6849132" vertical-offset="34420" max-vertical-offset="36195">
+          <caret line="1878" column="22" selection-start-line="1878" selection-start-column="22" selection-end-line="1878" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/css/av.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04884005" vertical-offset="1708" max-vertical-offset="2527">
+          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/css/ion.rangeSlider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2888">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/js/core.0.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33225808" vertical-offset="30" max-vertical-offset="14212">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_base.js.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42431763" vertical-offset="0" max-vertical-offset="4104">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/im/js/webim_demo_base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11949685" vertical-offset="0" max-vertical-offset="3705">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/css/webav_demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6764706" vertical-offset="0" max-vertical-offset="1729">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/livbJs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25518927" vertical-offset="0" max-vertical-offset="819">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/customer-answer-basic-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22393823" vertical-offset="7978" max-vertical-offset="8835">
+          <caret line="426" column="52" selection-start-line="426" selection-start-column="52" selection-end-line="426" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/js/less.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3323124" vertical-offset="136583" max-vertical-offset="194807">
+          <caret line="7207" column="0" selection-start-line="7207" selection-start-column="0" selection-end-line="7207" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-ilvb-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20046893" vertical-offset="0" max-vertical-offset="4123">
+          <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/images/nav_ctrl_btna.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="989" max-vertical-offset="16682">
+          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/init-ilvb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4598">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="1311">
+          <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!block;n#changeAppType#0" expanded="false" />
+            <element signature="n#!!block;n#selectApp#0" expanded="false" />
+            <element signature="n#!!block;n#tlsLogin#0" expanded="false" />
+            <element signature="n#!!block;n#tlsGetUserSig#0" expanded="false" />
+            <element signature="n#!!block;n#initDemoApp#0" expanded="false" />
+            <element signature="n#!!block;n#qavSdkLogin#0" expanded="false" />
+            <element signature="n#!!block;n#startContext#0" expanded="false" />
+            <element signature="n#!!block;n#stopContext#0" expanded="false" />
+            <element signature="n#!!block;n#validNumber#0" expanded="false" />
+            <element signature="n#!!block;n#setCookie#0" expanded="false" />
+            <element signature="n#!!block;n#getCookie#0" expanded="false" />
+            <element signature="n#!!block;n#delCookie#0" expanded="false" />
+            <element signature="n#!!block;n#detectOS#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4579">
+          <caret line="272" column="25" selection-start-line="272" selection-start-column="25" selection-end-line="272" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!block;n#GetSelectedCameraId#0" expanded="false" />
+            <element signature="n#!!block;n#setSelectedCameraIndex#0" expanded="false" />
+            <element signature="n#!!block;n#openCamera#0" expanded="false" />
+            <element signature="n#!!block;n#closeCamera#0" expanded="false" />
+            <element signature="n#!!block;n#changeCameraStatus#0" expanded="false" />
+            <element signature="n#!!block;n#resetCameraList#0" expanded="false" />
+            <element signature="n#!!block;n#cameraListOnChange#0" expanded="false" />
+            <element signature="n#!!block;n#setCamaraCheckedStatus#0" expanded="false" />
+            <element signature="n#!!block;n#getSelectedMicId#0" expanded="false" />
+            <element signature="n#!!block;n#setSelectedMicIndex#0" expanded="false" />
+            <element signature="n#!!block;n#openMic#0" expanded="false" />
+            <element signature="n#!!block;n#closeMic#0" expanded="false" />
+            <element signature="n#!!block;n#changeMicStatus#0" expanded="false" />
+            <element signature="n#!!block;n#resetMicList#0" expanded="false" />
+            <element signature="n#!!block;n#getMicVolumn#0" expanded="false" />
+            <element signature="n#!!block;n#setMicVolumn#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_room.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6517">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!block;n#updateMemberVideoStatus#0" expanded="false" />
+            <element signature="n#!!block;n#enterRoom#0" expanded="false" />
+            <element signature="n#!!block;n#exitRoom#0" expanded="false" />
+            <element signature="n#!!block;n#setMemberVolumn#0" expanded="false" />
+            <element signature="n#!!block;n#setMemberViewVolumn#0" expanded="false" />
+            <element signature="n#!!block;n#setOtherToMainView#0" expanded="false" />
+            <element signature="n#!!block;n#cancelViewClick#0" expanded="false" />
+            <element signature="n#!!block;n#relocationView#0" expanded="false" />
+            <element signature="n#!!block;n#setVideoViewById#0" expanded="false" />
+            <element signature="n#!!block;n#getDocTop#0" expanded="false" />
+            <element signature="n#!!block;n#getDocLeft#0" expanded="false" />
+            <element signature="n#!!block;n#getViewDivPosX#0" expanded="false" />
+            <element signature="n#!!block;n#getViewDivPosY#0" expanded="false" />
+            <element signature="n#!!block;n#getCurOpenViewUserIds#0" expanded="false" />
+            <element signature="n#!!block;n#setMemberViewAngle#0" expanded="false" />
+            <element signature="n#!!block;n#cutMemberViewPic#0" expanded="false" />
+            <element signature="n#!!block;n#fullScreenMemberView#0" expanded="false" />
+            <element signature="n#!!block;n#resetFullScreenMemberView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/ilvb/js/webav_demo_event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1643" max-vertical-offset="4199">
+          <caret line="101" column="56" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctors-static-page/doctor-ilvb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42512077" vertical-offset="180" max-vertical-offset="2660">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
           <folding />
         </state>
       </provider>

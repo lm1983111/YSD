@@ -454,7 +454,7 @@ tfoot{
     z-index: 1000;
     top: 10%;
     left: 50%;
-    display: none;
+    display: block;
     width: 600px;
     margin-left: -300px;
     background-color: #fff;
@@ -472,8 +472,8 @@ tfoot{
     position: absolute;
     content: '';
     border-bottom: 1px solid #ddd;
-    left: 15px;
-    right: 15px;
+    left: 0;
+    right: 0;
     bottom: 0;
 }
 .pop-up-window-title{
@@ -509,6 +509,7 @@ tfoot{
 }
 .pop-up-window-footer .btn{
     margin-right: 20px;
+    min-width: 80px;
 }
 .pop-up-window-footer .btn:last-child{
     margin-right: 0;
@@ -520,14 +521,22 @@ tfoot{
 
 /*弹出框结束*/
 
+.td-inner-img1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
 /*字体图标*/
 @font-face {
     font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?88pxhd');
-    src:    url('../fonts/icomoon.eot?88pxhd#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?88pxhd') format('truetype'),
-    url('../fonts/icomoon.woff?88pxhd') format('woff'),
-    url('../fonts/icomoon.svg?88pxhd#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?gv8ql');
+    src:    url('../fonts/icomoon.eot?gv8ql#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gv8ql') format('truetype'),
+    url('../fonts/icomoon.woff?gv8ql') format('woff'),
+    url('../fonts/icomoon.svg?gv8ql#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -583,54 +592,64 @@ tfoot{
 .icon-icon_incoming:before {
     content: "\e90b";
 }
-.icon-icon_light:before {
+.icon-icon_inquiry_img:before {
     content: "\e90c";
 }
-.icon-icon_mail_box:before {
-    content: "\e90d";
-}
-.icon-icon_medcial_record:before {
-    content: "\e90e";
-}
-.icon-icon_medical:before {
-    content: "\e90f";
-}
-.icon-icon_note:before {
-    content: "\e910";
-}
-.icon-icon_outcoming:before {
-    content: "\e911";
-}
-.icon-icon_patient:before {
-    content: "\e912";
-}
-.icon-icon_phone:before {
-    content: "\e913";
-}
-.icon-icon_phone_wifi:before {
-    content: "\e914";
-}
-.icon-icon_prescription:before {
-    content: "\e915";
-}
-.icon-icon_sport:before {
-    content: "\e916";
-}
-.icon-icon_study_info:before {
-    content: "\e917";
-}
-.icon-icon_suggestion:before {
-    content: "\e918";
-}
-.icon-icon_telephone:before {
-    content: "\e919";
-}
-.icon-icon_treatment:before {
+.icon-icon_light:before {
     content: "\e91a";
 }
-.icon-icon_triangle:before {
+.icon-icon_lock:before {
     content: "\e91b";
 }
+.icon-icon_mail_box:before {
+    content: "\e91c";
+}
+.icon-icon_medcial_record:before {
+    content: "\e91d";
+}
+.icon-icon_medical:before {
+    content: "\e91e";
+}
+.icon-icon_note:before {
+    content: "\e90d";
+}
+.icon-icon_outcoming:before {
+    content: "\e90e";
+}
+.icon-icon_patient:before {
+    content: "\e90f";
+}
+.icon-icon_phone:before {
+    content: "\e910";
+}
+.icon-icon_phone_wifi:before {
+    content: "\e911";
+}
+.icon-icon_prescription:before {
+    content: "\e912";
+}
+.icon-icon_response:before {
+    content: "\e913";
+}
+.icon-icon_sport:before {
+    content: "\e914";
+}
+.icon-icon_study_info:before {
+    content: "\e915";
+}
+.icon-icon_suggestion:before {
+    content: "\e916";
+}
+.icon-icon_telephone:before {
+    content: "\e917";
+}
+.icon-icon_treatment:before {
+    content: "\e918";
+}
+.icon-icon_triangle:before {
+    content: "\e919";
+}
+
 /*字体图标结束*/
 
 /*顶部菜单*/
@@ -774,17 +793,22 @@ tfoot{
     vertical-align: middle;
     margin-right: 15px;
     position: relative;
-    top: -2px;
+    top: 0;
 }
 
 .view-sidebar .sidebar-item-title:hover{
     opacity: 1;
-    background-color:rgba(59,116,168,.3);
+    background-color:#2a6a8a;
     /*background-color: #3d87bd;*/
 }
 .sidebar-item-title.active, .view-sidebar .sidebar-item-title.active:hover{
     opacity: 1;
-    background-color: #3c72a8;
+    background-color: #2a6a8a;
+}
+
+.sidebar-item-title.select{
+    opacity: 1;
+    background-color: #2a6a8a !important;
 }
 
 .sidebar-item-title.active:before{
@@ -803,14 +827,44 @@ tfoot{
     margin-top: -9px;
     right: -6px;
     display: block;
-    content: "\e91b";
+    content: "\e919";
     color: #f7f7f7;
     font-family: 'icomoon' !important;
     font-size: 18px;
     line-height: normal;
     -webkit-font-smoothing: antialiased;
 }
+.sidebar-item ul {list-style: none; margin: 0;padding: 0;color: #ffffff;position: relative;display: none;}
+.sidebar-item ul li{position: relative;background-color: #3186a7;}
+.sidebar-item ul li a{display: block;padding-left: 65px; height: 46px;  line-height: 46px;}
+.sidebar-item ul li a,.sidebar-item ul li a:hover{color: #ffffff;}
+.sidebar-item ul li.active{background-color: #3186a7;}
 
+.sidebar-item ul li.active:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    display: block;
+    height: 46px;
+    width: 8px;
+    background-color: #9ddd4b;
+}
+/*.sidebar-item ul li.active:after{
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    right: -6px;
+    display: block;
+    content: "\e91c";
+    color: #f7f7f7;
+    font-family: 'icomoon' !important;
+    font-size: 18px;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+}*/
+
+.icondown{margin-left:12px;display: inline-block;top:2px;}
 /*左侧菜单栏结束*/
 
 /*--------------------------------------------------右侧主体--------------------------------------------------*/
@@ -1597,4 +1651,250 @@ tfoot{
     background-color: #fff;
 }
 /*诊断处方结束*/
+
 /*--------------------------------------------------右侧主体结束*--------------------------------------------------/
+
+/*----------插件显示大图----------*/
+/*100-60相册*/
+.thumb100_60-table{
+    display: table;
+    float: left;
+    width: 100px;
+    height: 60px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.thumb100_60-table-cell{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.thumb100_60-table-cell img{
+    max-width: 98px;
+    max-height: 58px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+/*150相册*/
+.thumb150-table{
+    display: table;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.thumb150-table-cell{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.thumb150-table-cell img{
+    max-width: 148px;
+    max-height: 148px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+/*js增加html样式*/
+*{
+    box-sizing: border-box;
+}
+.source-img-wrap{
+    position: absolute;
+    z-index: 8200;
+    display: block;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    background-color: #fff;
+    /*background-color: rgba(0,0,0,.3);*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+.source-img-wrap img{
+    display: inline-block;
+    max-width: 800px;
+    max-height: 500px;
+}
+.close-source-img{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 1.42857143;
+    border-radius: 100%;
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.close-source-img:hover{
+    background-color: red;
+}
+.mask{
+    position: absolute;
+    z-index: 8100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    filter: alpha(opacity=60);
+    opacity: .6;
+}
+/*----------插件显示大图结束----------*/
+
+/*----------插件tab----------*/
+.tab-nav, .tab-nav li{
+    list-style: none;
+    padding: 0;
+}
+.tab-nav li{
+    display: block;
+    float: left;
+}
+.ui1-tab-nav li a{
+    display: block;
+    margin-right: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #666;
+    box-sizing:border-box;
+    border-bottom: 3px solid transparent;
+    outline: none;
+}
+.ui1-tab-nav li a:hover{
+    background-color: #eee;
+    border-bottom: 3px solid #eee;
+}
+.ui1-tab-nav li a.current, .ui1-tab-nav li a.current:hover{
+    border-bottom: 3px solid #1badc4;
+    color: #1badc4;
+    background-color: transparent;
+}
+.tab-nav:before, .tab-nav:after{
+    display: table;
+    content: '';
+}
+.tab-nav:after{
+    clear: both;
+}
+
+.ui2-tab-nav{
+    border-bottom: 1px solid #ddd;
+}
+.ui2-tab-nav li a{
+    display: block;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #666;
+    box-sizing:border-box;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.ui2-tab-nav li a:hover{
+    background-color: #fff;
+    color: #1badc4;
+}
+.ui2-tab-nav li a.current, .ui2-tab-nav li a.current:hover{
+    color: #1badc4;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+/*----------插件tab结束----------*/
+
+/*权限管理*/
+.crm-have-power-span, .crm-operate-a{
+    display: inline-block;
+    margin-right: 20px;
+}
+.crm-have-power-span:last-child, .crm-operate-a:last-child{
+    margin-right: 0;
+}
+.new-role-preview-upload-img-wrap.main-thumbnail-img{
+    width: 120px;
+    height: 50px;
+}
+.new-role-preview-upload-img-wrap{
+    position: relative;
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-image: url("../img/default_role_portriate.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.new-role-preview-upload-img-wrap img{
+    width: 100%;
+    height: 100%;
+}
+.role-portrait-up-load-box, .upload-lunch-wrap{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #1badc4;
+    overflow: hidden;
+    display: inline-block;
+}
+.up-launch, .upload-lunch-input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+.cne-add-detail-wrap {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: -15px;
+    -webkit-transition: all 0.12s ease,0.12s ease;
+    -moz-transition: all 0.12s ease,0.12s ease;
+    -ms-transition: all 0.12s ease,0.12s ease;
+    -o-transition: all 0.12s ease,0.12s ease;
+    transition: all 0.12s ease,0.12s ease;
+}
+.cne-add-detail-wrap.open {
+    height: 328px;
+    margin-top: 0;
+    margin-bottom: -15px;
+}
+.crm-select-role-checkbox-wrap .checkbox-inline + .checkbox-inline{
+    margin-left: 0;
+}
+.ellipsis-vrl, .ellipsis-ptl{
+    color: #333;
+}
+/*权限管理结束*/

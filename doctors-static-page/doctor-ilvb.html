@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>视频问诊-视频列表</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="ilvb/css/av.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 9 ]>
+    <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/compatible.css"/>
+    <![endif]-->
+    <script src="js/modernizr-2.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<OBJECT ID="qavSdk" CLASSID="CLSID:DE40BADD-2131-4E8B-93CC-B5062F70B97B" codebase="lib/qavsdk.cab#version=1,2,0,0" width="0" height="0"></OBJECT>
+
+<!--新增-->
+<div class="display-none">
+    <!--房间ID-->
+    <input id="room_id" value="" type="hidden">
+    <!--<button type="button" class="btn btn-primary" onclick="enterRoom()">加入房间</button>-->
+
+    <!--选择成员观看成员视频-->
+    <form class="form-horizontal" role="form">
+        <select class="form-control" id="room_members_list">
+        </select>
+        <input type="text" class="form-control" id="win_width" value="480" placeholder="请输入宽度" maxlength="4">
+        <input type="text" class="form-control" id="win_height" value="360" placeholder="请输入高度" maxlength="4">
+        <button type="button" class="btn btn-primary" onclick="checkview()">观看成员视频画面</button>
+    </form>
+
+    <form class="form-horizontal" role="form">
+        <!--摄像头选择-->
+        <select class="form-control" id="camera_list" onchange="cameraListOnChange(this.options.selectedIndex)"></select>
+        <!--摄像头开关-->
+        <input type="radio" name="camera_status_radio" id="cs_on_radio" value="1" onclick="changeCameraStatus(this)" checked>开
+        <input type="radio" name="camera_status_radio" id="cs_off_radio" value="0" onclick="changeCameraStatus(this)"> 关
+    </form>
+</div>
+<!--新增结束-->
+
+<!--新窗口-->
+<div class="new-window-wrap">
+    <div class="new-win-con">
+        <div class="new-window-main">
+            <div class="doctor-video">
+                <div class="doctor-video-header">与李雷（18625874569）视频问诊中</div>
+                <div class="doctor-video-body">
+                    <!--<div class="video-loading-img-box">
+                        <img class="video-loading-img" src="ilvb/images/loading-b.gif">
+                        <div class="video-loading-text">正在连接中...</div>
+                    </div>-->
+                    <div class="main-windows" id="mainView" style="height: 400px;width: 400px"></div>
+
+                    <div class="middle-right-bottom">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">事件通知:</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"></label>
+                                <div class="col-sm-9">
+                                    <select multiple class="form-control" id="notice_list">
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="doctor-video-footer">
+                    通话时长：00：00
+                    <a class="btn btn-info call-off-btn" onclick="exitRoom()">退出房间</a>
+                </div>
+            </div>
+        </div>
+        <div class="new-window-nav" id="newWindowNav">
+            <div class="dv-user-info">
+                <div class="dv-user-info-header">用户资料</div>
+                <div class="dv-user-info-body">
+                    <dl class="dl-horizontal">
+                        <dt>姓名：</dt>
+                        <dd>王小帅</dd>
+                        <dt>性别：</dt>
+                        <dd>男</dd>
+                        <dt>年龄：</dt>
+                        <dd>60</dd>
+                        <dt>婚姻：</dt>
+                        <dd>已婚</dd>
+                        <dt>身高：</dt>
+                        <dd>177</dd>
+                        <dt>名族：</dt>
+                        <dd>汉族</dd>
+                        <dt>职业：</dt>
+                        <dd>公务员</dd>
+                        <dt>体重：</dt>
+                        <dd>80kg</dd>
+                        <dt>最高血压：</dt>
+                        <dd>收缩压 180/舒张压 100</dd>
+                        <dt>电话：</dt>
+                        <dd>18659554555</dd>
+                        <dt>地址：</dt>
+                        <dd>湖南省长沙市星沙盼盼路9号千山药机</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window-ctrl-btn" id="winCtrlBtn"></div>
+</div>
+<!--新窗口结束-->
+
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/less.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="ilvb/js/livbJs.js" type="text/javascript" charset="utf-8"></script>
+
+<!--引入腾讯登陆服务TLS web sdk-->
+<script type="text/javascript" src="https://tls.qcloud.com/libs/api.min.js"></script>
+<script src="ilvb/js/lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="ilvb/js/lib/bootstrap/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="ilvb/js/lib/rangeSlider/ion.rangeSlider.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="ilvb/js/webav_demo_log.js?v=3.5"></script>
+<script type="text/javascript" src="ilvb/js/webav_demo_base.js?v=3.5"></script>
+<script type="text/javascript" src="ilvb/js/webav_demo_event.js?v=3.5"></script>
+<script type="text/javascript" src="ilvb/js/webav_demo_room.js?v=3.5"></script>
+<script type="text/javascript" src="ilvb/js/webav_demo_dev.js?v=3.5"></script>
+<script type="text/javascript" src="ilvb/js/init-ilvb.js"></script>
+
+</body>
+</html>

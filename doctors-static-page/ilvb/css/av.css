@@ -1,0 +1,133 @@
+body{
+    overflow: hidden;
+}
+.new-window-wrap{
+    display: block;
+    min-width: 900px;
+    min-height: 700px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+.new-win-con{
+    position: relative;
+}
+.new-window-main{
+    width: 70%;
+    height: 100%;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.new-window-nav{
+    width: 30%;
+    height: 100%;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.doctor-video-header{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: red;
+    background-color: bisque;
+}
+.doctor-video-footer{
+    position: relative;
+    display: block;
+    height: 78px;
+    line-height: 78px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: red;
+    background-color: bisque;
+}
+.doctor-video-body{
+    position: relative;
+    display: block;
+    background-color: #000;
+    border-right: 1px solid green;
+    height: 570px;
+}
+.call-off-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.dv-user-info-header{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: red;
+    background-color: bisque;
+}
+.dv-user-info-body{
+    padding: 20px 10px;
+}
+.dv-user-info-body .dl-horizontal dt{
+    width: 80px;
+}
+.dv-user-info-body .dl-horizontal dd{
+    margin-left: 100px;
+    margin-bottom: 8px;
+}
+
+.window-ctrl-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -40px;
+    display: block;
+    height: 80px;
+    width: 10px;
+    background-image: url("../images/nav_ctrl_btna.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.video-loading-img-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90px;
+    width: 120px;
+    margin-left: -60px;
+    margin-top: -45px;
+    text-align: center;
+}
+.video-loading-img{
+
+}
+.video-loading-text{
+    font-size: 18px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.view-sidebar-none .new-window-nav{
+    width: 0;
+    overflow: hidden;
+}
+.view-sidebar-none .new-window-main{
+    width: 100%;
+    overflow: hidden;
+}
+.view-sidebar-none .view-sidebar-block{
+    width: 30%;
+    overflow: hidden;
+}
+.display-none{
+
+}

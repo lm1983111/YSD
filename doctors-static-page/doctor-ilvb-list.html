@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>视频问诊-视频列表</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.less" type="text/css" rel="stylesheet/less">
+    <!--[if lt IE 9 ]>
+    <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/compatible.css"/>
+    <![endif]-->
+    <script src="js/modernizr-2.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="view-wrap">
+    <!--顶部菜单-->
+    <div class="view-topbar">
+        <div class="topbar-left"></div>
+        <div class="topbar-right">
+            <div class="topbar-right-item">
+                <a class="topbar-btn">
+                    <img class="topbar-btn-portrait-img" src="img/gallery1.jpg">
+                    <span>肖千山医生</span>
+                </a>
+            </div>
+            <div class="topbar-right-item">
+                <a class="topbar-btn">
+                    <span class="icon-icon_exit"></span>
+                    <span>退出</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--顶部菜单结束-->
+    <div class="view-body">
+        <div class="view-sidebar">
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-index.html">
+                    <span class="icon-icon_home"></span>
+                    <span>工作台</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-call-record.html">
+                    <span class="icon-icon_phone"></span>
+                    <span>通话记录</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="medical-file-list.html">
+                    <span class="icon-icon_medcial_record"></span>
+                    <span>病历档案</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-suggestions-list.html">
+                    <span class="icon-icon_suggestion"></span>
+                    <span>投诉建议</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-knowledge-repository.html">
+                    <span class="icon-icon_study_info"></span>
+                    <span>学习资料</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="doctor-patient-treatment-list.html">
+                    <span class="icon-icon_patient"></span>
+                    <span>患者列表</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="doctor-visit-record-list.html">
+                    <span class="icon-icon_treatment"></span>
+                    <span>问诊历史</span>
+                </a>
+            </div>
+            <div class="sidebar-item ">
+                <a class="sidebar-item-title " href="javascript:void(0);" id="Doctorsinquirybtn3" data-status="0">
+                    <span class="icon-icon_inquiry_img"></span>
+                    <span>图文问诊</span>
+                    <span class="glyphicon glyphicon-menu-down icondown"></span>
+                </a>
+                <ul>
+                    <li class="active"><a href="#">会话</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-item ">
+                <a class="sidebar-item-title " href="javascript:void(0);" id="Doctorsinquirybtn" data-status="0">
+                    <span class="icon-icon_inquiry_img"></span>
+                    <span>视频问诊</span>
+                    <span class="glyphicon glyphicon-menu-down icondown"></span>
+                </a>
+                <ul>
+                    <li class="active"><a href="#">视频列表</a></li>
+                    <li><a href="#">视频历史</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-item ">
+                <a class="sidebar-item-title " href="javascript:void(0);" id="Doctorsinquirybtn2" data-status="0">
+                    <span class="icon-icon_lock"></span>
+                    <span>权限管理</span>
+                    <span class="glyphicon glyphicon-menu-down icondown"></span>
+                </a>
+                <ul>
+                    <li><a href="competence-employee-management.html">员工管理</a></li>
+                    <li><a href="competence-role-management.html">角色管理</a></li>
+                    <li><a href="competence-function-link.html">功能链接</a></li>
+                    <li><a href="competence-menu-management.html">菜单管理</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="view-main">
+            <div class="view-main-container">
+                <div class="breadcrumb">
+                    <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：视频问诊</span> > 视频列表
+                </div>
+                <div class="grid-plrb15">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>用户</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>状态</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <span class="td-inner-img1"><img src="img/index_portrait.png"></span>
+                                <a href="doctor-patient-treatment.html" class="text-link-blue td-inner-a-pdl1">肖千山</a>
+                            </td>
+                            <td>男</td>
+                            <td>60</td>
+                            <td>正在呼叫...</td>
+                            <td class="text-center">
+                                <a class="btn btn-info"><span class="icon-icon_phone_wifi mr5"></span>接听</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="td-inner-img1"><img src="img/index_portrait.png"></span>
+                                <a href="doctor-patient-treatment.html" class="text-link-blue td-inner-a-pdl1">肖千山</a>
+                            </td>
+                            <td>男</td>
+                            <td>60</td>
+                            <td>预约时间5/20/11:30</td>
+                            <td class="text-center">
+                                <a id="callBtn" class="btn btn-info-empty"><span class="icon-icon_phone_wifi mr5"></span>呼叫</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="5">
+                                <div class="ui1-pagination-wrap">
+                                    <div class="fl">
+                                        <span class="ui1-pagination-total-data-tip">
+                                            共有<span class="default-blue"> 50 </span>条，每页显示：20条
+                                        </span>
+                                    </div>
+                                    <div class="fr">
+                                        <div class="ui1-pagination-page">
+                                            <!--<a><span class="glyphicon glyphicon-menu-left"></span></a>-->
+                                            <a class="disabled"><span class="glyphicon glyphicon-menu-left"></span></a>
+                                            <a class="cur">1</a>
+                                            <a>2</a>
+                                            <a>3</a>
+                                            <a>4</a>
+                                            <a>5</a>
+                                            <a>6</a>
+                                            <a>7</a>
+                                            <span class="c999">...</span>
+                                            <a>100</a>
+                                            <a><span class="glyphicon glyphicon-menu-right"></span></a>
+                                        </div>
+                                        <div class="ui1-pagination-goto">
+                                            <span>跳转到</span>
+                                            <input type="text" class="form-control ipt">
+                                            <span>页</span>
+                                            <input type="submit" class="btn btn-default ui1-pagination-go" value="确定">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/less.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function () {
+        //打开视频窗口
+        $("#callBtn").on("click", function () {
+            window.open("doctor-ilvb.html", "_blank", "toolbar=no, location=no, directories=no, status=no, menubar=yes, scrollbars=no, resizable=yes, copyhistory=yes, width=900, height=700")
+        });
+    });
+</script>
+</body>
+</html>

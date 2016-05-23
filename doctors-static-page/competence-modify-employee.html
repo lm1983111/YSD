@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>员工管理-修改员工资料</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.less" type="text/css" rel="stylesheet/less">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if lt IE 9 ]>
+    <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/compatible.css"/>
+    <![endif]-->
+    <script src="js/modernizr-2.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="view-wrap">
+    <!--顶部菜单-->
+    <div class="view-topbar">
+        <div class="topbar-left"></div>
+        <div class="topbar-right">
+            <div class="topbar-right-item">
+                <a class="topbar-btn">
+                    <img class="topbar-btn-portrait-img" src="img/gallery1.jpg">
+                    <span>肖千山医生</span>
+                </a>
+            </div>
+            <div class="topbar-right-item">
+                <a class="topbar-btn">
+                    <span class="icon-icon_exit"></span>
+                    <span>退出</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--顶部菜单结束-->
+    <div class="view-body">
+        <div class="view-sidebar">
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-index.html">
+                    <span class="icon-icon_home"></span>
+                    <span>工作台</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-call-record.html">
+                    <span class="icon-icon_phone"></span>
+                    <span>通话记录</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="medical-file-list.html">
+                    <span class="icon-icon_medcial_record"></span>
+                    <span>病历档案</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-suggestions-list.html">
+                    <span class="icon-icon_suggestion"></span>
+                    <span>投诉建议</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="customer-knowledge-repository.html">
+                    <span class="icon-icon_study_info"></span>
+                    <span>学习资料</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="doctor-patient-treatment-list.html">
+                    <span class="icon-icon_patient"></span>
+                    <span>患者列表</span>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-item-title" href="doctor-visit-record-list.html">
+                    <span class="icon-icon_treatment"></span>
+                    <span>问诊历史</span>
+                </a>
+            </div>
+            <div class="sidebar-item ">
+                <a class="sidebar-item-title " href="javascript:void(0);" id="Doctorsinquirybtn" data-status="0">
+                    <span class="icon-icon_inquiry_img"></span>
+                    <span>图文问诊</span>
+                    <span class="glyphicon glyphicon-menu-down icondown"></span>
+                </a>
+                <ul>
+                    <li><a href="doctor-im.html">会话</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-item ">
+                <a class="sidebar-item-title " href="javascript:void(0);" id="Doctorsinquirybtn2" data-status="0">
+                    <span class="icon-icon_lock"></span>
+                    <span>权限管理</span>
+                    <span class="glyphicon glyphicon-menu-down icondown"></span>
+                </a>
+                <ul>
+                    <li class="active"><a href="competence-employee-management.html">员工管理</a></li>
+                    <li><a href="competence-role-management.html">角色管理</a></li>
+                    <li><a href="competence-function-link.html">功能链接</a></li>
+                    <li><a href="competence-menu-management.html">菜单管理</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="view-main">
+            <div class="view-main-container">
+                <div class="breadcrumb">
+                    <span class="glyphicon glyphicon-triangle-right default-blue"></span><span class="default-blue">当前位置：权限管理</span> >
+                    <span>员工管理</span>
+                </div>
+                <div class="grid-plrb15">
+                    <div class="ui2-tab-content">
+                        <div class="ui2-tab-content-header clearfix">
+                            <div class="fl">新建员工资料</div>
+                            <div class="fr"></div>
+                        </div>
+                        <div class="mt8 clearfix relative">
+                            <div class="basic-info-form-wrap">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">头像：</label>
+                                                <div class="col-md-3">
+                                                    <div class="new-role-preview-upload-img-wrap">
+                                                        <img id="portraitPreviewImg" src="">
+                                                    </div>
+                                                    <div class="role-portrait-up-load-box">
+                                                        修改头像
+                                                        <input type="file" id="upLaunch" onchange="getUpLoadImgUrl()" accept="image/*" class="up-launch">
+                                                    </div>
+
+                                                    <script type="text/javascript">
+                                                        function getUpLoadImgUrl() {
+                                                            var upLaunch = document.getElementById("upLaunch");
+                                                            var portraitPreviewImg = document.getElementById("portraitPreviewImg");
+                                                            portraitPreviewImg.src = window.URL.createObjectURL(upLaunch.files[0]);
+                                                        }
+                                                    </script>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">用户名：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                    <div class="red">用户名不能重复</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">姓名：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">手机：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">工号：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">密码：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">确认密码：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">角色：</label>
+                                                <div class="col-md-8">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input checked type="checkbox" id="inlineCheckbox2" value="option1"> 医务客服
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">角色：</label>
+                                                <div class="col-md-8">
+                                                    <label class="radio-inline">
+                                                        <input checked type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 启用
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1"> 锁定
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">添加详情：</label>
+                                                <div class="col-md-8">
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioXqAdd" id="inlineRadioXqAddYes" value="option1"> 是
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input checked type="radio" name="inlineRadioXqAdd" id="inlineRadioXqAddNo" value="option1"> 否
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="cne-add-detail-wrap" id="notPassAuthenticateWrap">
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">医院：</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">职称：</label>
+                                                    <div class="col-md-3">
+                                                        <select class="form-control">
+                                                            <option>主任医师</option>
+                                                            <option>主任医师</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">说明：</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">擅长：</label>
+                                                    <div class="col-md-8">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">简介：</label>
+                                                    <div class="col-md-8">
+                                                        <textarea class="form-control" rows="6"></textarea>
+                                                    </div>
+                                                </div>
+                                                <script type="text/javascript">
+                                                    $(function(){
+                                                        $("#inlineRadioXqAddYes").on("change",function(){
+                                                            if(this.checked){
+                                                                $("#notPassAuthenticateWrap").addClass("open")
+                                                            }
+                                                        });
+                                                        $("#inlineRadioXqAddNo").on("change",function(){
+                                                            if(this.checked){
+                                                                $("#notPassAuthenticateWrap").removeClass("open")
+                                                            }
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+
+                                        </div>
+                                        <div class="tool-bar">
+                                            <a class="btn btn-info">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/less.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
