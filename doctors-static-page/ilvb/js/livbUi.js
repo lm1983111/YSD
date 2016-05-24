@@ -12,4 +12,18 @@ $(function () {
             $(".view-main").css({"left": "0"});
         }
     });
+
 });
+
+//禁止右键
+document.oncontextmenu=function(){
+    return false;
+};
+//禁止F5刷新
+document.onkeydown=function(event){
+    var e = event || window.event || arguments.callee.caller.arguments[0];
+    if(e && e.keyCode==116){
+        return false;
+    }
+};
+

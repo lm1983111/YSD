@@ -126,6 +126,7 @@
                             <th>用户</th>
                             <th>性别</th>
                             <th>年龄</th>
+                            <th>时间</th>
                             <th>状态</th>
                             <th class="text-center">操作</th>
                         </tr>
@@ -138,27 +139,16 @@
                             </td>
                             <td>男</td>
                             <td>60</td>
-                            <td>正在呼叫...</td>
+                            <td>5/20/11:20</td>
+                            <td>正在请求...</td>
                             <td class="text-center">
-                                <a class="btn btn-info"><span class="icon-icon_phone_wifi mr5"></span>接听</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="td-inner-img1"><img src="img/index_portrait.png"></span>
-                                <a href="doctor-patient-treatment.html" class="text-link-blue td-inner-a-pdl1">肖千山</a>
-                            </td>
-                            <td>男</td>
-                            <td>60</td>
-                            <td>预约时间5/20/11:30</td>
-                            <td class="text-center">
-                                <a id="callBtn" class="btn btn-info-empty"><span class="icon-icon_phone_wifi mr5"></span>呼叫</a>
+                                <a id="callBtn" class="btn btn-info"><span class="icon-icon_phone_wifi mr5"></span>接受</a>
                             </td>
                         </tr>
                         </tbody>
                         <tfoot>
                         <tr>
-                            <td colspan="5">
+                            <td colspan="6">
                                 <div class="ui1-pagination-wrap">
                                     <div class="fl">
                                         <span class="ui1-pagination-total-data-tip">
@@ -204,7 +194,7 @@
     $(function () {
         //打开视频窗口
         $("#callBtn").on("click", function () {
-            window.open("doctor-ilvb.html", "_blank", "toolbar=no, location=no, directories=no, status=no, menubar=yes, scrollbars=no, resizable=no, copyhistory=yes, width=860, height=560")
+            window.open("doctor-ilvb.html", "_blank", "toolbar=no, location=no, status=no, directories=no, menubar=yes, scrollbars=no, resizable=no, copyhistory=yes, width=860, height=700")
         });
     });
 </script>

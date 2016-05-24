@@ -17,32 +17,24 @@
 </head>
 <body>
 <OBJECT ID="qavSdk" CLASSID="CLSID:DE40BADD-2131-4E8B-93CC-B5062F70B97B" codebase="lib/qavsdk.cab#version=1,2,0,0" width="0" height="0"></OBJECT>
-
-<!--新增-->
+<!--隐藏视频DOM-->
 <div class="display-none">
     <!--房间ID-->
     <input id="room_id" value="" type="hidden">
-    <!--<button type="button" class="btn btn-primary" onclick="enterRoom()">加入房间</button>-->
     <!--选择成员观看成员视频-->
     <form class="form-horizontal" role="form">
-        <select class="form-control" id="room_members_list">
-        </select>
+        <select class="form-control" id="room_members_list"></select>
         <input type="text" class="form-control" id="win_width" value="480" placeholder="请输入宽度" maxlength="4">
         <input type="text" class="form-control" id="win_height" value="360" placeholder="请输入高度" maxlength="4">
-        <button type="button" class="btn btn-primary" onclick="checkview()">观看成员视频画面</button>
     </form>
-
     <form class="form-horizontal" role="form">
         <!--摄像头选择-->
         <select class="form-control" id="camera_list" onchange="cameraListOnChange(this.options.selectedIndex)"></select>
-        <!--摄像头开关-->
-        <input type="radio" name="camera_status_radio" id="cs_on_radio" value="1" onclick="changeCameraStatus(this)" checked>开
-        <input type="radio" name="camera_status_radio" id="cs_off_radio" value="0" onclick="changeCameraStatus(this)"> 关
     </form>
 </div>
-<!--新增结束-->
+<!--隐藏视频DOM结束-->
 
-<!--新窗口-->
+<!--新窗口视图-->
 <div class="new-window-wrap">
     <div class="new-win-con">
         <div class="new-window-main">
@@ -53,24 +45,14 @@
                         <img class="video-loading-img" src="ilvb/images/loading-b.gif">
                         <div class="video-loading-text">正在连接中...</div>
                     </div>
+                    <!--患者视频区域-->
+                    <div class="other-windows1" id="other1View"></div>
+                    <!--医生视频区域-->
                     <div class="main-windows" id="mainView"></div>
-
-                    <!--事件通知-->
-                    <div class="middle-right-bottom ilvb-note-wrap">
-                        <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                                <label class="col-sm-4 control-label">事件通知：</label>
-                                <div class="col-sm-8">
-                                    <select multiple class="form-control" id="notice_list">
-                                    </select>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
                 <div class="doctor-video-footer">
                     通话时长：00：00
-                    <a class="btn btn-info call-off-btn" onclick="exitRoom()">退出房间</a>
+                    <a class="btn btn-red call-off-btn" onclick="exitRoom()">挂断</a>
                 </div>
             </div>
         </div>
@@ -106,17 +88,28 @@
             </div>
         </div>
     </div>
-
-    <div class="window-ctrl-btn" id="winCtrlBtn"></div>
+    <!--事件通知-->
+    <div class="middle-right-bottom ilvb-note-wrap">
+        <form class="form-horizontal" role="form">
+            <div class="form-group" style="margin-bottom: 0">
+                <label class="col-sm-4 control-label">事件通知：</label>
+                <div class="col-sm-8">
+                    <select multiple class="form-control" id="notice_list">
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
-<!--新窗口结束-->
+<!--新窗口视图结束-->
 
+<!--公共JS-->
 <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/less.js" type="text/javascript"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 <script src="ilvb/js/livbUi.js" type="text/javascript" charset="utf-8"></script>
 
-<!--引入腾讯登陆服务TLS web sdk-->
+<!--引入腾讯JS-->
 <script type="text/javascript" src="https://tls.qcloud.com/libs/api.min.js"></script>
 <script src="ilvb/js/lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="ilvb/js/lib/bootstrap/bootstrap.js" type="text/javascript" charset="utf-8"></script>

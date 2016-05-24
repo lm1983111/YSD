@@ -218,7 +218,16 @@ p{
     background-color: #1badc4;
     border-color: #1badc4;
 }
-
+.btn-red{
+    color: #fff;
+    background-color: #eb3636;
+    border-color: #eb3636;
+}
+.btn-red:hover, .btn-red:active{
+    color: #fff;
+    background-color: #da2929;
+    border-color: #da2929;
+}
 /* 按钮结束  */
 
 /*table*/

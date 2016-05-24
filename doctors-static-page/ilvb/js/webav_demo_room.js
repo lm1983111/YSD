@@ -197,15 +197,15 @@ function checkview()
         return;
     }
     if (memberId == otherUserId1) {
-        alert("已打开该用户视频画面(第1个其他视频画面)，请选择其他用户进行观看");
+        //alert("已打开该用户视频画面(第1个其他视频画面)，请选择其他用户进行观看");
         return;
     }
     if (memberId == otherUserId2) {
-        alert("已打开该用户视频画面(第2个其他视频画面)，请选择其他用户进行观看");
+        //alert("已打开该用户视频画面(第2个其他视频画面)，请选择其他用户进行观看");
         return;
     }
     if (memberId == otherUserId3) {
-        alert("已打开该用户视频画面(第3个其他视频画面)，请选择其他用户进行观看");
+        //alert("已打开该用户视频画面(第3个其他视频画面)，请选择其他用户进行观看");
         return;
     }
     if (isMainUsable) {

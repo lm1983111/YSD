@@ -134,17 +134,25 @@ var mainViewWidth = Math.round(2 * docWidth * ViewRatio.WIDTH_RATIO);
 //其他视频区域宽度
 var otherViewWidth = Math.round(docWidth * ViewRatio.WIDTH_RATIO);
 //主视频区域大小
-var MainView = {
+/*var MainView = {
     'WIDTH': mainViewWidth,
     'HEIGHT': Math.round(mainViewWidth * ViewRatio.HEIGHT_WIDTH_RATIO)
-    };
+    };*/
+var MainView = {
+    'WIDTH': 200,
+    'HEIGHT': 150
+};
 //其他视频区域大小
-var OtherView = {
+/*var OtherView = {
     'WIDTH': otherViewWidth,
     'HEIGHT': Math.round(otherViewWidth * ViewRatio.HEIGHT_WIDTH_RATIO)
-    };
+    };*/
+var OtherView = {
+    'WIDTH': 580,
+    'HEIGHT': 360
+};
 //视频画面Y坐标修正值
-var FIX_POSITION_Y = -20;
+var FIX_POSITION_Y = 0;
 //初始化主视频画面宽高
 $('#win_width').val(MainView.WIDTH);
 $('#win_height').val(MainView.HEIGHT);
@@ -230,6 +238,6 @@ if (TLSHelper.getQuery('tmpsig')) {
 
 //获取房间号
 (function getRoomId(){
-    var thisRoomId = "10";
+    var thisRoomId = "123";
     $("#room_id").val(thisRoomId)
 })();

@@ -13,9 +13,9 @@ body{
     right: 0;
     display: block;
     min-width: 860px;
-    min-height: 560px;
+    min-height: 710px;
     /*border: 1px solid #ddd;*/
-    background-color: #eee;
+    background-color: #3a3a3a;
 }
 .new-win-con{
     position: relative;
@@ -33,6 +33,10 @@ body{
     display: block;
     float: left;
     overflow: hidden;
+    color: #d8d8d8;
+}
+.new-window-nav dl dt{
+    color: #a5a5a5;
 }
 .doctor-video-header{
     display: block;
@@ -43,7 +47,8 @@ body{
     /*border-width: 0 1px 1px 0;
     border-style: solid;
     border-color: red;*/
-    background-color: bisque;
+    color: #d8d8d8;
+    background-color: #323232;
 }
 .doctor-video-footer{
     position: relative;
@@ -55,19 +60,20 @@ body{
     /*border-width: 1px 1px 0 0;
     border-style: solid;
     border-color: red;*/
-    background-color: bisque;
+    background-color: #808080;
+    color: #d8d8d8;
 }
 .doctor-video-body{
     position: relative;
     display: block;
     background-color: #242527;
     /*border-right: 1px solid green;*/
-    height: 460px;
+    height: 600px;
 }
 .call-off-btn{
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 8px;
 }
 
 .dv-user-info-header{
@@ -79,7 +85,7 @@ body{
     /*border-width: 0 0 1px 0;
     border-style: solid;
     border-color: red;*/
-    background-color: bisque;
+    background-color: #3a3a3a;
 }
 .dv-user-info-body{
     padding: 20px 10px;
@@ -150,4 +156,32 @@ body{
     left: 0;
     right: 0;
     width: 100%;
+}
+/*患者视频*/
+.other-windows1 {
+    position: absolute;
+    z-index: 8000;
+    top: 40px;
+    left: 10px;
+    width: 580px;
+    height: 360px;
+    /*background: red;*/
+}
+/*医生视频*/
+/*.cover-activeX-iframe{
+    position: absolute;
+    z-index: 8100;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 150px;
+}*/
+.main-windows{
+    position: absolute;
+    z-index: 8200;
+    bottom: 10px;
+    right: 16px;
+    width: 200px;
+    height: 150px;
+    /*background-color: green;*/
 }
