@@ -1,79 +1,103 @@
+#qavSdk{
+    display: none;
+}
 body{
-    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    position: relative;
-    background-color: #eee;
+    min-width: 960px;
+    /*min-height: 750px;*/
+    background-color: #3a3a3a;
+    color: #d8d8d8;
 }
 .new-window-wrap{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.new-win-con{
     position: absolute;
-    top:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.new-window-main{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    /*min-width: 672px;*/
+    /*min-height: 750px;*/
+    display: block;
+    float: left;
+    /*background-color: green;*/
+}
+.new-window-nav{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    /*min-width: 288px;*/
+    /*min-height: 750px;*/
+    display: block;
+    float: left;
+}
+
+.new-window-nav dl dt{
+    color: #a5a5a5;
+}
+.doctor-video{
+    height: 100%;
+}
+.doctor-video-header{
+    position: absolute;
+    z-index: 8100;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #323232;
+    color: #d8d8d8;
+    font-size: 16px;
+}
+.doctor-video-footer{
+    position: absolute;
+    z-index: 8100;
     bottom: 0;
     left: 0;
     right: 0;
     display: block;
-    min-width: 860px;
-    min-height: 710px;
-    /*border: 1px solid #ddd;*/
-    background-color: #3a3a3a;
-}
-.new-win-con{
-    position: relative;
-}
-.new-window-main{
-    width: 70%;
-    height: 100%;
-    display: block;
-    float: left;
-    overflow: hidden;
-}
-.new-window-nav{
-    width: 30%;
-    height: 100%;
-    display: block;
-    float: left;
-    overflow: hidden;
-    color: #d8d8d8;
-}
-.new-window-nav dl dt{
-    color: #a5a5a5;
-}
-.doctor-video-header{
-    display: block;
-    height: 50px;
-    line-height: 50px;
+    height: 80px;
+    line-height: 80px;
     padding-left: 20px;
     padding-right: 20px;
-    /*border-width: 0 1px 1px 0;
-    border-style: solid;
-    border-color: red;*/
-    color: #d8d8d8;
     background-color: #323232;
-}
-.doctor-video-footer{
-    position: relative;
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    /*border-width: 1px 1px 0 0;
-    border-style: solid;
-    border-color: red;*/
-    background-color: #808080;
     color: #d8d8d8;
 }
 .doctor-video-body{
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: block;
-    background-color: #242527;
-    /*border-right: 1px solid green;*/
-    height: 600px;
+    background-color: #252525;
+    z-index: 8000;
+    height: 100%;
+    /*min-height: 600px;*/
 }
 .call-off-btn{
     position: absolute;
     right: 30px;
-    top: 8px;
+    top: 25px;
+    min-width: 100px;
 }
 
 .dv-user-info-header{
@@ -82,21 +106,19 @@ body{
     line-height: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    /*border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: red;*/
-    background-color: #3a3a3a;
+    text-align: center;
+    font-size: 16px;
 }
 .dv-user-info-body{
     padding: 20px 10px;
 }
-.dv-user-info-body .dl-horizontal dt{
+/*.dv-user-info-body .dl-horizontal dt{
     width: 80px;
-}
-.dv-user-info-body .dl-horizontal dd{
+}*/
+/*.dv-user-info-body .dl-horizontal dd{
     margin-left: 100px;
     margin-bottom: 8px;
-}
+}*/
 
 .window-ctrl-btn{
     position: absolute;
@@ -116,11 +138,12 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 90px;
     width: 120px;
+    height: 120px;
     margin-left: -60px;
-    margin-top: -45px;
+    margin-top: -60px;
     text-align: center;
+    /*background-color: #999999;*/
 }
 .video-loading-img{
 
@@ -151,37 +174,50 @@ body{
 }
 .ilvb-note-wrap{
     position: absolute;
-    z-index: 8000;
-    bottom: 0;
+    z-index: 9999;
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
 }
+.all-video-box{
+    position: absolute;
+    z-index: 8300;
+    width: 650px;
+    height: 480px;
+    top: 50%;
+    left: 50%;
+    margin-left: -325px;
+    margin-top: -240px;
+    /*background-color: #a6e1ec;*/
+}
 /*患者视频*/
 .other-windows1 {
     position: absolute;
-    z-index: 8000;
-    top: 40px;
-    left: 10px;
-    width: 580px;
-    height: 360px;
-    /*background: red;*/
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 480px;
+    /*background-color: cornflowerblue;*/
 }
 /*医生视频*/
-/*.cover-activeX-iframe{
+.main-windows{
     position: absolute;
-    z-index: 8100;
     bottom: 0;
     right: 0;
     width: 200px;
     height: 150px;
-}*/
-.main-windows{
-    position: absolute;
-    z-index: 8200;
-    bottom: 10px;
-    right: 16px;
-    width: 200px;
-    height: 150px;
-    /*background-color: green;*/
+    /*background-color: #ffff00;*/
 }
+
+/*
+.float-tck-layer{
+    display: none;
+    position: absolute;
+    z-index: 9000;
+    top:100px;
+    left: 100px;
+    height: 800px;
+    width: 800px;
+    background-color: #000000;
+}*/

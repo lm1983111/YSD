@@ -9,6 +9,7 @@
  */
 function qavsdk_eventcallback(evt, result, oper, vcnt, vusers, info, picBase64Str)
 {
+    addNotice('进入。。。。。。。。。。');
     log.info("evt = " + evt + " result = " + result + " oper = " + oper + " vcnt = " + vcnt);
     var msg, memberList = '';
     if (result == 0) {
@@ -23,7 +24,7 @@ function qavsdk_eventcallback(evt, result, oper, vcnt, vusers, info, picBase64St
                 currentStatus = StatusType.login;
                 //清空事件通知下拉列表
                 $("#notice_list").empty();
-                addNotice('[登录][成功]用户ID:' + loginInfo.identifier);
+                addNotice('[登录][成功]用户ID>:' + loginInfo.identifier);
                 log.info('[登录][成功]用户ID:' + loginInfo.identifier);
                 //只有SDK登录成功，才可以启动SDK
                 startContext();
@@ -42,20 +43,24 @@ function qavsdk_eventcallback(evt, result, oper, vcnt, vusers, info, picBase64St
                 log.info('[停止SDK][成功]');
                 //设置当前状态处于登录成功态
                 currentStatus = StatusType.login;
-                addNotice('[停止SDK][成功]');
+                addNotice('[停止SDK][成功]'+currentStatus);
                 //清空成员视频画面
-                resetView();
+                //resetView();
                 curentRoomId = null;
                 inputRoomId = null;
                 loginInfo.identifier = null;
                 loginInfo.userSig = null;
+
+                break;
+
+
                 $('#myself_type_desc').hide();
                 $('#demo_type_desc').show();
                 $('#sdkAppIdDiv').hide();
                 $('#accountTypeDiv').hide();
                 isQuitFlag = false;
                 //跳转到首页
-                window.location.href = callBackUrl;
+               // window.location.href = callBackUrl;
                 break;
             case EventType.ENTER_ROOM://进入房间成功
                 log.info('[加入房间][成功]:' + "操作者:" + oper + ",当前成员数:" + vcnt);
@@ -75,12 +80,11 @@ function qavsdk_eventcallback(evt, result, oper, vcnt, vusers, info, picBase64St
                 setSelectedPlayerIndex(0);
                 //打开扬声器
                 openPlayer();
-
-                //checkview();
                 break;
             case EventType.EXIT_ROOM://退出房间成功
                 log.info('[退出房间][成功]:' + "操作者:" + oper + ",当前成员数:" + vcnt);
                 addNotice('[退出房间][成功]:' + "操作者:" + oper + ",当前成员数:" + vcnt);
+                $(".video-loading-img-box").html('<div style="font-size: 18px">已退出房间！</div>');
                 //设置当前状态处于启动SDK成功态
                 currentStatus = StatusType.context;
                 curentRoomId = null;
@@ -88,16 +92,15 @@ function qavsdk_eventcallback(evt, result, oper, vcnt, vusers, info, picBase64St
 
                 //清空成员视频画面
                 resetView();
-                alert('退出房间成功');
-                //如果单击了返回登录按钮
-                if (isQuitFlag) {
-                    isQuitFlag = false;
-                    stopContext();
-                }
+                stopContext();
                 break;
             case EventType.ROOM_MEMBERS_CHANGE://房间成员变化通知
                 log.info('[房间成员变化]:' + "操作者:" + oper + ",当前成员数:" + vcnt);
                 addNotice('[房间成员变化]:' + "操作者:" + oper + ",当前成员数:" + vcnt);
+                //房间成员等于2，隐藏加载GIF
+                if(vcnt == 2){
+                    $(".video-loading-img-box").remove();
+                }
                 //重置房间成员下拉列表
                 setRoomMemberList(memberList,checkview);
                 break;

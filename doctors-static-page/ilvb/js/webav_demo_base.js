@@ -101,12 +101,7 @@ function initDemoApp() {
 //返回登录
 function quitClick(type) {
     $('#qavSdkDemoDiv').hide();
-    //是否登录
-    if (loginInfo.identifier == null) {
-        window.location.href = callBackUrl;
-        //$('#select_app_dialog').modal('show');
-        return;
-    }
+
     
     if(type==0){
         isQuitFlag = true;
@@ -125,22 +120,30 @@ function quitClick(type) {
 function qavSdkLogin() {
     console.info('start qavSdk login');
     //log.info('accountType=' + loginInfo.accountType);
-    qavSdk.Login(loginInfo.sdkAppID, loginInfo.accountType, loginInfo.sdkAppID, loginInfo.identifier, loginInfo.userSig);
-    console.info('after qavSdk login');
+    //qavSdk.StopContext();
+    log.info('start StopContext');
+    setTimeout(function(){
+        qavSdk.Login(loginInfo.sdkAppID, loginInfo.accountType, loginInfo.sdkAppID, loginInfo.identifier, loginInfo.userSig);
+        console.info('after qavSdk login');
+    },1500)
+
 }
 
 //启动qavsdk
 function startContext() {
-    console.info('start StartContext');
-    qavSdk.StartContext(loginInfo.sdkAppID, loginInfo.accountType, loginInfo.sdkAppID, loginInfo.identifier, loginInfo.userSig);
-    console.info('after StartContext');
+    console.info('start StartContext>>>>>>>>>>>>>>>>>>');
+   setTimeout(function(){
+       qavSdk.StartContext(loginInfo.sdkAppID, loginInfo.accountType, loginInfo.sdkAppID, loginInfo.identifier, loginInfo.userSig);
+       console.info('after StartContext>>>>>>>>>>>>>>>>>>');
+   },1500)
+
 }
 
 //停止qavsdk
 function stopContext() {
-    log.info('start StopContext');
+    log.info('===============start StopContext===============...........................===============');
     qavSdk.StopContext();
-    log.info('after StopContext');
+    log.info('===============after StopContext===============............................=================');
 }
 
 //判断str是否只包含数字

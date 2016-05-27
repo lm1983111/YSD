@@ -3,13 +3,14 @@
 var sdkAppID = 1400007122;
 var accountType = 3457;
 //当前用户身份
+//当前用户身份
 var loginInfo = {
     sdkAppID: 1400007122, //用户所属应用id
     appIDAt3rd: 1400007122, //用户所属应用id
     accountType: 3457, //用户所属应用帐号类型
     identifier: '15021720050', //当前用户ID
-    userSig: 'eJx1zk9rgzAYx-G7ryLkPLYmNkYHPbSlf4R2rXUoeAkuSV0Y0yyN1jr23idSmJc91*8Hfs*3AwCAr7v4Mee8qkvL7E1LCJ4BdKeEwoe-rrUSLLfMNWLoaDrpjyKMR0q2WhnJ8rOVZlCYBLhnI6KELK06qztAZIIR7Q0Zo4v4YMPi-1MXVQxxv4qW4To9BF8iaV42J9O1y-d5SjrzVm7KJHY5Ujwsuixq0tTUfK4WqwQdQvkUZ-tFkR2randdb31zPKF269fXRLeNH92CpguyaDYbTVr1Ke8PeYi6HvYodH6cXwtOWJk_' //当前用户身份凭证
-    };
+    userSig: 'eJx1zkFvgjAYxvE7n6LpdWajpbV2N2hIRHHOuM15ahAK1AWsWLIR43cfISbjsvf6-yXPe3UAAPAt3j4maXpqayttZxQEzwB6hDI4*evG6EwmVnpNNnRE3P4Ywnik1I-RjZJJblUzKEw57tmI6EzVVuf6DhB1MWK9oWN0yb7ksPj-1EUXQ1yFexFtxHYt3h-IcooECivBUxt9BsTnH8fza7tTB3oq5vtgfsjjsohKf8FJ3qpzTcI2fiqsYH6well02OUqTkpemrWZpcsd7b6r0aTVlbo-NCUenjFGoXNzfgEjDFZf' //当前用户身份凭证
+};
 initDemoApp();
 qavSdkLogin();
 //当前用户所处的状态
@@ -148,8 +149,8 @@ var MainView = {
     'HEIGHT': Math.round(otherViewWidth * ViewRatio.HEIGHT_WIDTH_RATIO)
     };*/
 var OtherView = {
-    'WIDTH': 580,
-    'HEIGHT': 360
+    'WIDTH': 350,
+    'HEIGHT': 480
 };
 //视频画面Y坐标修正值
 var FIX_POSITION_Y = 0;
@@ -163,6 +164,14 @@ var osName = detectOS();
 log.info('osName=' + osName);
 //刷新页面或关闭页面触发事件
 window.onbeforeunload = function() {
+
+    //先取消所有成员视频
+    cancelAllView();
+    //再退出房间
+    qavSdk.ExitRoom();
+
+    return;
+
     var n = window.event.screenX - window.screenLeft;
     var b = n > document.documentElement.scrollWidth - 20;
     if (b && window.event.clientY < 0 || window.event.altKey) {
@@ -171,6 +180,7 @@ window.onbeforeunload = function() {
     //返回登录
     quitClick(1);
     }
+
     };
 //滚动页面触发事件
 window.onscroll = function() {
@@ -235,7 +245,6 @@ if (TLSHelper.getQuery('tmpsig')) {
     $("body").css("background-color", 'white');
     }
     }
-
 //获取房间号
 (function getRoomId(){
     var thisRoomId = "123";

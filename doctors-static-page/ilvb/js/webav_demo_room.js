@@ -2,6 +2,8 @@ function setRoomMemberList(list,_callback)
 {
     //清空房间成员列表
     resetRoomMemberList();
+
+    console.log("清空房间成员列表")
     var userId, avStatus, optText;
     if (list && list.length > 0) {
 
@@ -164,9 +166,9 @@ function requestViewList(userIds) {
 
 //取消所有成员视频画面
 function cancelAllView() {
-    log.info('start CancelAllView');
+    log.info('start CancelAllView+++++++++++++++++++++++++++++++++++++');
     qavSdk.CancelAllView();
-    log.info('after CancelAllView');
+    log.info('after CancelAllView+++++++++++++++++++++++++++++++++++++');
 }
 
 //观看成员视频画面按钮点击事件
@@ -294,6 +296,13 @@ function exitRoom()
     cancelAllView();
     //再退出房间
     qavSdk.ExitRoom();
+
+
+    //qavSdk.CloseCamera();
+    //qavSdk.CloseMic();
+    //qavSdk.ClosePlayer();
+
+    //qavSdk.StopContext();
 }
 
 //清空成员视频画面

@@ -64,12 +64,18 @@ function initDemoApp(){
     //快速回复
     $(".content-fast >div").on("click",function(){
         var msgtxt=$(this).html();
-        msgtxt=msgtxt.replace(/\d\./, "")
-        that.fastReutrnMsg(msgtxt);
+        msgtxt=msgtxt.replace(/\d+\./, "");
+        $('#send_msg_text').val(msgtxt);
+    });
+
+    //知识库
+    $(".content-knowledge >a").on("click",function(){
+        var msgtxt=$(this).html();
+        $('#send_msg_text').val(knowledgeMap.get(msgtxt));
     });
 
     this.getAllFriendsCallbackOK=function(){
-        console.log("获取朋友，返回成功")
+        console.log("获取朋友，返回成功");
         selType == SessionType.C2C && webim.syncMsgs(this.syncMsgsCallbackOK);
     }
 
@@ -80,10 +86,6 @@ function initDemoApp(){
         if (webim.MsgStore.sessCount() > 0) {
             var sessMap = webim.MsgStore.sessMap();
 
-            console.log("0000000000000000000000000000000000000");
-            console.log(sessMap)
-            console.log(sessMap.length)
-            console.log("0000000000000000000000000000000000000");
                 for (var i in sessMap) {
                 //console.info("sessMap[i]=%O",sessMap[i]);
                 var sess = sessMap[i];
@@ -110,6 +112,8 @@ function initDemoApp(){
 
     //单击好友或群组头像事件
     this.onSelSess=function(name,index, to_id, sessListName) {
+        //获取用户基本信息
+        getUserinfo(to_id);
         if (selToID != null && selToID != to_id) {
             var preSessDiv = document.getElementById("sessDiv_" + selToID);
             //将之前选中用户的样式置为未选中样式
@@ -155,9 +159,9 @@ function initDemoApp(){
         }else{
             //不同天
 
-            //msghed = (msg.isSend ? loginInfo.identifier :  msg.fromAccount ) + "&nbsp;&nbsp;" + webim.Tool.formatTimeStamp(msg.time);
+            msghed = (msg.isSend ? loginInfo.identifier :  msg.fromAccount ) + "&nbsp;&nbsp;" + webim.Tool.formatTimeStamp(msg.time);
         }
-        console.log(msg)
+       // console.log(msg)
         //如果是发给自己的消息
         if (!msg.isSend){
            // msghead.style.color = "blue";
@@ -213,6 +217,9 @@ function initDemoApp(){
          var to_id=to_id;
 
          if(childrenLength==1){
+             //获取用户基本信息
+             getUserinfo(to_id);
+
              selToID=to_id;
              var preSessDiv = document.getElementById("sessDiv_" + selToID);
              //将之前选中用户的样式置为未选中样式
@@ -467,6 +474,8 @@ var friends=(function(){
     };
 
     p.addfriend=function(to_id, name, face, unread_msg_count, friendslist){
+        //获取用户基本信息
+        getUserinfo(to_id);
         var that=this;
         var theto_id="sessDiv_"+to_id;
         var thebadgeid="badgeDiv_"+to_id;
@@ -497,7 +506,7 @@ var friends=(function(){
         });
     }
 
-    p.getAllFriend=function(cbOK, cbErr){
+    p.getAllFriend=function(cbOK){
         var that=this;
         var options = {
             'From_Account': loginInfo.identifier,
@@ -536,7 +545,7 @@ var friends=(function(){
                         friends[i]["name"]=webim.Tool.formatText2Html(friend_name);
                         //增加一个好友div
                         that.addfriend(friends[i].Info_Account, webim.Tool.formatText2Html(friend_name), friendHeadUrl, 0, 'friendslist');
-                        console.log(friends[i].Info_Account, webim.Tool.formatText2Html(friend_name), friendHeadUrl, 0, 'friendslist');
+                       // console.log(friends[i].Info_Account, webim.Tool.formatText2Html(friend_name), friendHeadUrl, 0, 'friendslist');
                     }
                     //that.addEvent();
                     if (selType == SessionType.C2C) {
@@ -564,8 +573,43 @@ var friends=(function(){
                             console.warn("不存在selBadgeDiv(c2c): selBadgeDivId=" + "badgeDiv_" + selToID);
                         }
                     }
-                    if (cbOK)
-                        cbOK();
+                    that.main.getAllFriendsCallbackOK();
+
+                }else{
+                    //接收不是好友的离线消息
+                    console.log("离线消息。。。。。。。。。。。。。。。。。。  000000000000000000000000");
+                    that.main.getAllFriendsCallbackOK();
+                    //获取所有聊天会话
+                    //var sessMap = webim.MsgStore.sessMap();
+                    //var markInt=0;
+                    //for (var i in sessMap) {
+                    //    console.log("离线消息。。。。。。。。。。。。。。。。。。  11111111111111111111")
+                    //    var sess = sessMap[i];
+                    //    if(markInt==0){
+                    //        //selToID=sess
+                    //        markInt=1;
+                    //        console.log("离线消息。。。。。。。。。。。。。。。。。。  ",sess.type)
+                    //    }
+                    //    if (selToID == sess.id()) {//处于当前聊天界面
+                    //        selSess = sess;
+                    //        //获取当前会话消息数
+                    //        var msgCount = sess.msgCount();
+                    //        // add new msgs
+                    //        if (msgCount > curMsgCount) {
+                    //            for (var j = curMsgCount; j < msgCount; j++) {
+                    //                var msg = sess.msg(j);
+                    //                //在聊天窗体中新增一条消息
+                    //                this.addMsg(msg);
+                    //                curMsgCount++;
+                    //            }
+                    //            //消息已读上报，以及设置会话自动已读标记
+                    //            webim.setAutoRead(selSess, true, true);
+                    //        }
+                    //    } else {
+                    //        //更新其他聊天对象的未读消息数
+                    //        this.updateSessDiv(sess.type(),sess.id(), sess.unread());
+                    //    }
+                    //}
 
                 }
 
